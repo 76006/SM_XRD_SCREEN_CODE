@@ -1,0 +1,1012 @@
+﻿<ITU>
+  <Object type="GUIDesigner.LayerWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="身体头治疗进行中" children="Controls">
+    <Object type="GUIDesigner.ButtonWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Button_3" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="ShowText">No</Property>
+      <Property name="FontSize_">22</Property>
+      <Property name="TextFont_">ASC_CHS_22</Property>
+      <Property name="Bold_">No</Property>
+      <Property name="NormalTextColor_">Black</Property>
+      <Property name="PressedTextColor_">Black</Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
+      <Property name="TextAlignType">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="NormalBackgroundColor">Transparent</Property>
+      <Property name="PressedBackgroundColor">Transparent</Property>
+      <Property name="NormalImage">
+      </Property>
+      <Property name="PressedImage">档位减.jpg</Property>
+      <Property name="ShowBorder">No</Property>
+      <Property name="BorderColor_">Yellow</Property>
+      <Property name="EventNotify">Yes</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="FunctionType">Switch</Property>
+      <Property name="Target">
+      </Property>
+      <Property name="ChildScreen">No</Property>
+      <Property name="Animation">No</Property>
+      <Property name="AnimationEffect">None</Property>
+      <Property name="AnimationAreaSpace">WholePage</Property>
+      <Property name="AnimationLeftBound">0</Property>
+      <Property name="AnimationRightBound">0</Property>
+      <Property name="AnimationTopBound">0</Property>
+      <Property name="AnimationBottomBound">0</Property>
+      <Property name="Protection">No</Property>
+      <Property name="PasswordString_">888888</Property>
+      <Property name="InitState">NotPressed</Property>
+      <Property name="OperateStyle">Transient</Property>
+      <Property name="LongPressDelay">ms_100</Property>
+      <Property name="CommadStr">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAQAAAANBAs=</Binary>
+      </Property>
+      <Property name="InternalCommand">
+      </Property>
+      <Property name="ExternalCommand">
+      </Property>
+      <Property name="ExterCommIntervalMs">100</Property>
+      <Property name="VirtualKeyType">Virtual_Char</Property>
+      <Property name="VirtualKeyChar">a</Property>
+      <Property name="MenuControlID">0</Property>
+      <Property name="InputControlID">0</Property>
+      <Property name="MouseLongPressDelay">0</Property>
+      <Property name="MouseUpDelay">0</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">Yellow</Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Button_3</Property>
+      <Property name="ID">3</Property>
+      <Property name="X">744</Property>
+      <Property name="Y">512</Property>
+      <Property name="BorderWidth">113</Property>
+      <Property name="BorderHeight">89</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">113, 89</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">160</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.ButtonWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Button_4" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="ShowText">No</Property>
+      <Property name="FontSize_">22</Property>
+      <Property name="TextFont_">ASC_CHS_22</Property>
+      <Property name="Bold_">No</Property>
+      <Property name="NormalTextColor_">Black</Property>
+      <Property name="PressedTextColor_">Black</Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
+      <Property name="TextAlignType">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="NormalBackgroundColor">Transparent</Property>
+      <Property name="PressedBackgroundColor">Transparent</Property>
+      <Property name="NormalImage">
+      </Property>
+      <Property name="PressedImage">档位+.jpg</Property>
+      <Property name="ShowBorder">No</Property>
+      <Property name="BorderColor_">Yellow</Property>
+      <Property name="EventNotify">Yes</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="FunctionType">Switch</Property>
+      <Property name="Target">
+      </Property>
+      <Property name="ChildScreen">No</Property>
+      <Property name="Animation">No</Property>
+      <Property name="AnimationEffect">None</Property>
+      <Property name="AnimationAreaSpace">WholePage</Property>
+      <Property name="AnimationLeftBound">0</Property>
+      <Property name="AnimationRightBound">0</Property>
+      <Property name="AnimationTopBound">0</Property>
+      <Property name="AnimationBottomBound">0</Property>
+      <Property name="Protection">No</Property>
+      <Property name="PasswordString_">888888</Property>
+      <Property name="InitState">NotPressed</Property>
+      <Property name="OperateStyle">Transient</Property>
+      <Property name="LongPressDelay">ms_100</Property>
+      <Property name="CommadStr">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAQAAAANBAs=</Binary>
+      </Property>
+      <Property name="InternalCommand">
+      </Property>
+      <Property name="ExternalCommand">
+      </Property>
+      <Property name="ExterCommIntervalMs">100</Property>
+      <Property name="VirtualKeyType">Virtual_Char</Property>
+      <Property name="VirtualKeyChar">a</Property>
+      <Property name="MenuControlID">0</Property>
+      <Property name="InputControlID">0</Property>
+      <Property name="MouseLongPressDelay">0</Property>
+      <Property name="MouseUpDelay">0</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">Yellow</Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Button_4</Property>
+      <Property name="ID">4</Property>
+      <Property name="X">1033</Property>
+      <Property name="Y">512</Property>
+      <Property name="BorderWidth">113</Property>
+      <Property name="BorderHeight">89</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">113, 89</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">161</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.ButtonWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Button_5" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="ShowText">No</Property>
+      <Property name="FontSize_">22</Property>
+      <Property name="TextFont_">ASC_CHS_22</Property>
+      <Property name="Bold_">No</Property>
+      <Property name="NormalTextColor_">Black</Property>
+      <Property name="PressedTextColor_">Black</Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
+      <Property name="TextAlignType">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="NormalBackgroundColor">Transparent</Property>
+      <Property name="PressedBackgroundColor">Transparent</Property>
+      <Property name="NormalImage">
+      </Property>
+      <Property name="PressedImage">振动按下.jpg</Property>
+      <Property name="ShowBorder">No</Property>
+      <Property name="BorderColor_">Yellow</Property>
+      <Property name="EventNotify">No</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="FunctionType">Switch</Property>
+      <Property name="Target">
+      </Property>
+      <Property name="ChildScreen">No</Property>
+      <Property name="Animation">No</Property>
+      <Property name="AnimationEffect">None</Property>
+      <Property name="AnimationAreaSpace">WholePage</Property>
+      <Property name="AnimationLeftBound">0</Property>
+      <Property name="AnimationRightBound">0</Property>
+      <Property name="AnimationTopBound">0</Property>
+      <Property name="AnimationBottomBound">0</Property>
+      <Property name="Protection">No</Property>
+      <Property name="PasswordString_">888888</Property>
+      <Property name="InitState">NotPressed</Property>
+      <Property name="OperateStyle">Toggle</Property>
+      <Property name="LongPressDelay">ms_100</Property>
+      <Property name="CommadStr">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAQAAAANBAs=</Binary>
+      </Property>
+      <Property name="InternalCommand">
+      </Property>
+      <Property name="ExternalCommand">
+      </Property>
+      <Property name="ExterCommIntervalMs">100</Property>
+      <Property name="VirtualKeyType">Virtual_Char</Property>
+      <Property name="VirtualKeyChar">a</Property>
+      <Property name="MenuControlID">0</Property>
+      <Property name="InputControlID">0</Property>
+      <Property name="MouseLongPressDelay">0</Property>
+      <Property name="MouseUpDelay">0</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">Yellow</Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Button_5</Property>
+      <Property name="ID">5</Property>
+      <Property name="X">1035</Property>
+      <Property name="Y">641</Property>
+      <Property name="BorderWidth">87</Property>
+      <Property name="BorderHeight">87</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">87, 87</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">162</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.ButtonWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Button_6" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="ShowText">No</Property>
+      <Property name="FontSize_">22</Property>
+      <Property name="TextFont_">ASC_CHS_22</Property>
+      <Property name="Bold_">No</Property>
+      <Property name="NormalTextColor_">Black</Property>
+      <Property name="PressedTextColor_">Black</Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
+      <Property name="TextAlignType">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="NormalBackgroundColor">Transparent</Property>
+      <Property name="PressedBackgroundColor">Transparent</Property>
+      <Property name="NormalImage">
+      </Property>
+      <Property name="PressedImage">
+      </Property>
+      <Property name="ShowBorder">No</Property>
+      <Property name="BorderColor_">Yellow</Property>
+      <Property name="EventNotify">Yes</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="FunctionType">Switch</Property>
+      <Property name="Target">
+      </Property>
+      <Property name="ChildScreen">No</Property>
+      <Property name="Animation">No</Property>
+      <Property name="AnimationEffect">None</Property>
+      <Property name="AnimationAreaSpace">WholePage</Property>
+      <Property name="AnimationLeftBound">0</Property>
+      <Property name="AnimationRightBound">0</Property>
+      <Property name="AnimationTopBound">0</Property>
+      <Property name="AnimationBottomBound">0</Property>
+      <Property name="Protection">No</Property>
+      <Property name="PasswordString_">888888</Property>
+      <Property name="InitState">NotPressed</Property>
+      <Property name="OperateStyle">Transient</Property>
+      <Property name="LongPressDelay">ms_100</Property>
+      <Property name="CommadStr">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAQAAAANBAs=</Binary>
+      </Property>
+      <Property name="InternalCommand">
+      </Property>
+      <Property name="ExternalCommand">
+      </Property>
+      <Property name="ExterCommIntervalMs">100</Property>
+      <Property name="VirtualKeyType">Virtual_Char</Property>
+      <Property name="VirtualKeyChar">a</Property>
+      <Property name="MenuControlID">0</Property>
+      <Property name="InputControlID">0</Property>
+      <Property name="MouseLongPressDelay">0</Property>
+      <Property name="MouseUpDelay">0</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">Yellow</Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Button_6</Property>
+      <Property name="ID">6</Property>
+      <Property name="X">731</Property>
+      <Property name="Y">639</Property>
+      <Property name="BorderWidth">99</Property>
+      <Property name="BorderHeight">87</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">99, 87</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">163</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.TextWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Text_1" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="DisplayPassword">No</Property>
+      <Property name="UseArtDigit">No</Property>
+      <Property name="IconPath_" />
+      <Property name="HalfWidthDot_">25%</Property>
+      <Property name="BackgroundStyle">Transparent</Property>
+      <Property name="BgColor">Green</Property>
+      <Property name="BgImagePath" />
+      <Property name="InputMode">UserDeviceInput</Property>
+      <Property name="TextMaxLength">255</Property>
+      <Property name="SystemVariant">FirmwareVersion</Property>
+      <Property name="KeyboardType">DigitKeyboard</Property>
+      <Property name="Tip" />
+      <Property name="KeyboardPosition">Auto</Property>
+      <Property name="X_">0</Property>
+      <Property name="Y_">0</Property>
+      <Property name="KeyboardInit">Yes</Property>
+      <Property name="ValueLimit">No</Property>
+      <Property name="MaxValue_">100</Property>
+      <Property name="MinValue_">0</Property>
+      <Property name="Precision_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="DisplayedText">0</Property>
+      <Property name="_FontSize">42</Property>
+      <Property name="TextFont">ASC_CHS_22</Property>
+      <Property name="Bold">No</Property>
+      <Property name="TextAlignStyle">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="FgColor">White</Property>
+      <Property name="ScrollDelay">3</Property>
+      <Property name="StopDelay">30</Property>
+      <Property name="LetterSpacing">0</Property>
+      <Property name="LineHeight">16</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">
+      </Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Text_1</Property>
+      <Property name="ID">11</Property>
+      <Property name="X">871</Property>
+      <Property name="Y">512</Property>
+      <Property name="BorderWidth">142</Property>
+      <Property name="BorderHeight">89</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Text">0</Property>
+      <Property name="Font">微软雅黑, 42px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">White</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">142, 89</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">164</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.IconWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Icon_2" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="VariableRange">No</Property>
+      <Property name="VariableMin_">0</Property>
+      <Property name="VariableMax_">0</Property>
+      <Property name="IconMin_">0</Property>
+      <Property name="IconMax_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="IconFile">冷媒档位.ico</Property>
+      <Property name="ExternalImage">No</Property>
+      <Property name="CurrentFrame">0</Property>
+      <Property name="AlphaBlend">Alpha</Property>
+      <Property name="PressSetup">Disable</Property>
+      <Property name="Step_">20</Property>
+      <Property name="MultipleLanguage">No</Property>
+      <Property name="ItemName">Icon_2</Property>
+      <Property name="ID">14</Property>
+      <Property name="X">730</Property>
+      <Property name="Y">628</Property>
+      <Property name="BorderWidth">107</Property>
+      <Property name="BorderHeight">112</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">107, 112</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">165</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.IconWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Icon_1" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="VariableRange">No</Property>
+      <Property name="VariableMin_">0</Property>
+      <Property name="VariableMax_">0</Property>
+      <Property name="IconMin_">0</Property>
+      <Property name="IconMax_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="IconFile">冷媒余量.ico</Property>
+      <Property name="ExternalImage">No</Property>
+      <Property name="CurrentFrame">0</Property>
+      <Property name="AlphaBlend">Alpha</Property>
+      <Property name="PressSetup">Disable</Property>
+      <Property name="Step_">20</Property>
+      <Property name="MultipleLanguage">No</Property>
+      <Property name="ItemName">Icon_1</Property>
+      <Property name="ID">8</Property>
+      <Property name="X">1011</Property>
+      <Property name="Y">18</Property>
+      <Property name="BorderWidth">125</Property>
+      <Property name="BorderHeight">69</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">125, 69</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">166</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.TextWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Text_5" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="DisplayPassword">No</Property>
+      <Property name="UseArtDigit">No</Property>
+      <Property name="IconPath_" />
+      <Property name="HalfWidthDot_">25%</Property>
+      <Property name="BackgroundStyle">Transparent</Property>
+      <Property name="BgColor">Green</Property>
+      <Property name="BgImagePath" />
+      <Property name="InputMode">UserDeviceInput</Property>
+      <Property name="TextMaxLength">255</Property>
+      <Property name="SystemVariant">FirmwareVersion</Property>
+      <Property name="KeyboardType">DigitKeyboard</Property>
+      <Property name="Tip" />
+      <Property name="KeyboardPosition">Auto</Property>
+      <Property name="X_">0</Property>
+      <Property name="Y_">0</Property>
+      <Property name="KeyboardInit">Yes</Property>
+      <Property name="ValueLimit">No</Property>
+      <Property name="MaxValue_">100</Property>
+      <Property name="MinValue_">0</Property>
+      <Property name="Precision_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="DisplayedText">
+      </Property>
+      <Property name="_FontSize">46</Property>
+      <Property name="TextFont">ASC_CHS_22</Property>
+      <Property name="Bold">No</Property>
+      <Property name="TextAlignStyle">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="FgColor">White</Property>
+      <Property name="ScrollDelay">3</Property>
+      <Property name="StopDelay">30</Property>
+      <Property name="LetterSpacing">0</Property>
+      <Property name="LineHeight">16</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">
+      </Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Text_5</Property>
+      <Property name="ID">20</Property>
+      <Property name="X">608</Property>
+      <Property name="Y">201</Property>
+      <Property name="BorderWidth">541</Property>
+      <Property name="BorderHeight">118</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 46px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">White</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">541, 118</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">167</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.TextWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Text_3" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="DisplayPassword">No</Property>
+      <Property name="UseArtDigit">No</Property>
+      <Property name="IconPath_" />
+      <Property name="HalfWidthDot_">25%</Property>
+      <Property name="BackgroundStyle">Transparent</Property>
+      <Property name="BgColor">Green</Property>
+      <Property name="BgImagePath" />
+      <Property name="InputMode">UserDeviceInput</Property>
+      <Property name="TextMaxLength">255</Property>
+      <Property name="SystemVariant">FirmwareVersion</Property>
+      <Property name="KeyboardType">DigitKeyboard</Property>
+      <Property name="Tip" />
+      <Property name="KeyboardPosition">Auto</Property>
+      <Property name="X_">0</Property>
+      <Property name="Y_">0</Property>
+      <Property name="KeyboardInit">Yes</Property>
+      <Property name="ValueLimit">No</Property>
+      <Property name="MaxValue_">100</Property>
+      <Property name="MinValue_">0</Property>
+      <Property name="Precision_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="DisplayedText">
+      </Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="TextFont">ASC_CHS_22</Property>
+      <Property name="Bold">No</Property>
+      <Property name="TextAlignStyle">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="FgColor">White</Property>
+      <Property name="ScrollDelay">3</Property>
+      <Property name="StopDelay">30</Property>
+      <Property name="LetterSpacing">0</Property>
+      <Property name="LineHeight">16</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">
+      </Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Text_3</Property>
+      <Property name="ID">18</Property>
+      <Property name="X">125</Property>
+      <Property name="Y">572</Property>
+      <Property name="BorderWidth">340</Property>
+      <Property name="BorderHeight">73</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">White</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">340, 73</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">168</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.TextWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Text_4" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="DisplayPassword">No</Property>
+      <Property name="UseArtDigit">No</Property>
+      <Property name="IconPath_" />
+      <Property name="HalfWidthDot_">25%</Property>
+      <Property name="BackgroundStyle">Transparent</Property>
+      <Property name="BgColor">Green</Property>
+      <Property name="BgImagePath" />
+      <Property name="InputMode">UserDeviceInput</Property>
+      <Property name="TextMaxLength">255</Property>
+      <Property name="SystemVariant">FirmwareVersion</Property>
+      <Property name="KeyboardType">DigitKeyboard</Property>
+      <Property name="Tip" />
+      <Property name="KeyboardPosition">Auto</Property>
+      <Property name="X_">0</Property>
+      <Property name="Y_">0</Property>
+      <Property name="KeyboardInit">Yes</Property>
+      <Property name="ValueLimit">No</Property>
+      <Property name="MaxValue_">100</Property>
+      <Property name="MinValue_">0</Property>
+      <Property name="Precision_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="DisplayedText">
+      </Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="TextFont">ASC_CHS_22</Property>
+      <Property name="Bold">No</Property>
+      <Property name="TextAlignStyle">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="FgColor">White</Property>
+      <Property name="ScrollDelay">3</Property>
+      <Property name="StopDelay">30</Property>
+      <Property name="LetterSpacing">0</Property>
+      <Property name="LineHeight">16</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">
+      </Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Text_4</Property>
+      <Property name="ID">19</Property>
+      <Property name="X">110</Property>
+      <Property name="Y">655</Property>
+      <Property name="BorderWidth">372</Property>
+      <Property name="BorderHeight">78</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">White</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">372, 78</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">169</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.IconWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Icon_12" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="VariableRange">No</Property>
+      <Property name="VariableMin_">0</Property>
+      <Property name="VariableMax_">0</Property>
+      <Property name="IconMin_">0</Property>
+      <Property name="IconMax_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="IconFile">治疗进度.ico</Property>
+      <Property name="ExternalImage">No</Property>
+      <Property name="CurrentFrame">0</Property>
+      <Property name="AlphaBlend">Alpha</Property>
+      <Property name="PressSetup">Disable</Property>
+      <Property name="Step_">20</Property>
+      <Property name="MultipleLanguage">No</Property>
+      <Property name="ItemName">Icon_12</Property>
+      <Property name="ID">16</Property>
+      <Property name="X">67</Property>
+      <Property name="Y">121</Property>
+      <Property name="BorderWidth">419</Property>
+      <Property name="BorderHeight">410</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">419, 410</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">171</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.IconWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Icon_11" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="VariableRange">No</Property>
+      <Property name="VariableMin_">0</Property>
+      <Property name="VariableMax_">0</Property>
+      <Property name="IconMin_">0</Property>
+      <Property name="IconMax_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="IconFile">新治疗头.ico</Property>
+      <Property name="ExternalImage">No</Property>
+      <Property name="CurrentFrame">5</Property>
+      <Property name="AlphaBlend">Alpha</Property>
+      <Property name="PressSetup">Disable</Property>
+      <Property name="Step_">20</Property>
+      <Property name="MultipleLanguage">No</Property>
+      <Property name="ItemName">Icon_11</Property>
+      <Property name="ID">17</Property>
+      <Property name="X">174</Property>
+      <Property name="Y">222</Property>
+      <Property name="BorderWidth">214</Property>
+      <Property name="BorderHeight">206</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">214, 206</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">170</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.ButtonWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Button_16" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="ShowText">No</Property>
+      <Property name="FontSize_">22</Property>
+      <Property name="TextFont_">ASC_CHS_22</Property>
+      <Property name="Bold_">No</Property>
+      <Property name="NormalTextColor_">Black</Property>
+      <Property name="PressedTextColor_">Black</Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
+      <Property name="TextAlignType">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="NormalBackgroundColor">Transparent</Property>
+      <Property name="PressedBackgroundColor">Transparent</Property>
+      <Property name="NormalImage">
+      </Property>
+      <Property name="PressedImage">
+      </Property>
+      <Property name="ShowBorder">No</Property>
+      <Property name="BorderColor_">Yellow</Property>
+      <Property name="EventNotify">Yes</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="FunctionType">ChangeScreen</Property>
+      <Property name="Target">设置界面</Property>
+      <Property name="ChildScreen">No</Property>
+      <Property name="Animation">No</Property>
+      <Property name="AnimationEffect">None</Property>
+      <Property name="AnimationAreaSpace">WholePage</Property>
+      <Property name="AnimationLeftBound">0</Property>
+      <Property name="AnimationRightBound">0</Property>
+      <Property name="AnimationTopBound">0</Property>
+      <Property name="AnimationBottomBound">0</Property>
+      <Property name="Protection">No</Property>
+      <Property name="PasswordString_">888888</Property>
+      <Property name="InitState">NotPressed</Property>
+      <Property name="OperateStyle">Transient</Property>
+      <Property name="LongPressDelay">ms_100</Property>
+      <Property name="CommadStr">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAQAAAANBAs=</Binary>
+      </Property>
+      <Property name="InternalCommand">
+      </Property>
+      <Property name="ExternalCommand">
+      </Property>
+      <Property name="ExterCommIntervalMs">100</Property>
+      <Property name="VirtualKeyType">Virtual_Char</Property>
+      <Property name="VirtualKeyChar">a</Property>
+      <Property name="MenuControlID">0</Property>
+      <Property name="InputControlID">0</Property>
+      <Property name="MouseLongPressDelay">0</Property>
+      <Property name="MouseUpDelay">0</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">Yellow</Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Button_16</Property>
+      <Property name="ID">21</Property>
+      <Property name="X">1162</Property>
+      <Property name="Y">12</Property>
+      <Property name="BorderWidth">91</Property>
+      <Property name="BorderHeight">87</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">91, 87</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">172</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Object type="GUIDesigner.IconWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Icon_3" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="VariableRange">No</Property>
+      <Property name="VariableMin_">0</Property>
+      <Property name="VariableMax_">0</Property>
+      <Property name="IconMin_">0</Property>
+      <Property name="IconMax_">0</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="IconFile">97.jpg</Property>
+      <Property name="ExternalImage">No</Property>
+      <Property name="CurrentFrame">0</Property>
+      <Property name="AlphaBlend">Alpha</Property>
+      <Property name="PressSetup">Disable</Property>
+      <Property name="Step_">20</Property>
+      <Property name="MultipleLanguage">No</Property>
+      <Property name="ItemName">Icon_3</Property>
+      <Property name="ID">1</Property>
+      <Property name="X">912</Property>
+      <Property name="Y">661</Property>
+      <Property name="BorderWidth">85</Property>
+      <Property name="BorderHeight">47</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">85, 47</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">173</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Property name="ItemName">身体头治疗进行中</Property>
+    <Property name="ID">31</Property>
+    <Property name="ScreenBoundsEditEnable">Disable</Property>
+    <Property name="X">0</Property>
+    <Property name="Y">0</Property>
+    <Property name="BorderWidth">1280</Property>
+    <Property name="BorderHeight">800</Property>
+    <Property name="BgColor">Gainsboro</Property>
+    <Property name="BgImagePath">身体头治疗中.jpg</Property>
+    <Property name="AutoScaleMode">Inherit</Property>
+    <Property name="Name">身体头治疗进行中</Property>
+    <Property name="DoubleBuffered">False</Property>
+  </Object>
+</ITU>

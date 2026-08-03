@@ -1,0 +1,16 @@
+﻿<ITU>
+  <Object type="GUIDesigner.LayerWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="电源及阻抗界面按下" children="Controls">
+    <Property name="ItemName">电源及阻抗界面按下</Property>
+    <Property name="ID">12</Property>
+    <Property name="ScreenBoundsEditEnable">Disable</Property>
+    <Property name="X">0</Property>
+    <Property name="Y">0</Property>
+    <Property name="BorderWidth">1280</Property>
+    <Property name="BorderHeight">800</Property>
+    <Property name="BgColor">Gainsboro</Property>
+    <Property name="BgImagePath">13电源及阻抗界面-按下.jpg</Property>
+    <Property name="AutoScaleMode">Inherit</Property>
+    <Property name="Name">电源及阻抗界面按下</Property>
+    <Property name="DoubleBuffered">False</Property>
+  </Object>
+</ITU>

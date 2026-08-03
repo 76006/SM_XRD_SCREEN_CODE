@@ -1,0 +1,105 @@
+﻿<ITU>
+  <Object type="GUIDesigner.LayerWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="表信息" children="Controls">
+    <Object type="GUIDesigner.ButtonWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Button_40" children="Controls">
+      <Property name="BindVariableEnable">False</Property>
+      <Property name="BindVarInfo">
+        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAEBFeHRlbnNpb24sIFZlcnNpb249MS4yLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAARRXh0ZW5zaW9uLlZhckluZm8GAAAABFBvcnQFU2xhdmUISXNTdWJWYXIIbVZhck5hbWULbVN1YlZhck5hbWUIZGlzcG9zZWQAAAABAQAODgEBAgAAAAEAAAAABgMAAAAACQMAAAAACw==</Binary>
+      </Property>
+      <Property name="ShowText">No</Property>
+      <Property name="FontSize_">22</Property>
+      <Property name="TextFont_">ASC_CHS_22</Property>
+      <Property name="Bold_">No</Property>
+      <Property name="NormalTextColor_">Black</Property>
+      <Property name="PressedTextColor_">Black</Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
+      <Property name="TextAlignType">MiddleCenter</Property>
+      <Property name="WordWrap">Yes</Property>
+      <Property name="NormalBackgroundColor">Transparent</Property>
+      <Property name="PressedBackgroundColor">Transparent</Property>
+      <Property name="NormalImage">返回.jpg</Property>
+      <Property name="PressedImage">返回-高亮.jpg</Property>
+      <Property name="ShowBorder">No</Property>
+      <Property name="BorderColor_">Yellow</Property>
+      <Property name="EventNotify">Yes</Property>
+      <Property name="InitialEnable">Yes</Property>
+      <Property name="InitVisible">Show</Property>
+      <Property name="FunctionType">ChangeScreen</Property>
+      <Property name="Target">功率调试界面</Property>
+      <Property name="ChildScreen">No</Property>
+      <Property name="Animation">No</Property>
+      <Property name="AnimationEffect">None</Property>
+      <Property name="AnimationAreaSpace">WholePage</Property>
+      <Property name="AnimationLeftBound">0</Property>
+      <Property name="AnimationRightBound">0</Property>
+      <Property name="AnimationTopBound">0</Property>
+      <Property name="AnimationBottomBound">0</Property>
+      <Property name="Protection">No</Property>
+      <Property name="PasswordString_">888888</Property>
+      <Property name="InitState">NotPressed</Property>
+      <Property name="OperateStyle">Transient</Property>
+      <Property name="LongPressDelay">ms_100</Property>
+      <Property name="CommadStr">
+        <Binary>AAEAAAD/////AQAAAAAAAAARAQAAAAQAAAANBAs=</Binary>
+      </Property>
+      <Property name="InternalCommand">
+      </Property>
+      <Property name="ExternalCommand">
+      </Property>
+      <Property name="ExterCommIntervalMs">100</Property>
+      <Property name="VirtualKeyType">Virtual_Char</Property>
+      <Property name="VirtualKeyChar">a</Property>
+      <Property name="MenuControlID">0</Property>
+      <Property name="InputControlID">0</Property>
+      <Property name="MouseLongPressDelay">0</Property>
+      <Property name="MouseUpDelay">0</Property>
+      <Property name="External">False</Property>
+      <Property name="GradientColor">
+      </Property>
+      <Property name="BorderColor">Yellow</Property>
+      <Property name="GradientMode">None</Property>
+      <Property name="Delay">0</Property>
+      <Property name="ItemName">Button_40</Property>
+      <Property name="ID">1</Property>
+      <Property name="X">1154</Property>
+      <Property name="Y">9</Property>
+      <Property name="BorderWidth">99</Property>
+      <Property name="BorderHeight">96</Property>
+      <Property name="PortSelectorEnable">False</Property>
+      <Property name="Ports">
+      </Property>
+      <Property name="TextFontSize">ASC_CHS_22</Property>
+      <Property name="_FontSize">22</Property>
+      <Property name="Text_align_style">MiddleCenter</Property>
+      <Property name="Angle">0</Property>
+      <Property name="Alpha">255</Property>
+      <Property name="FontIndex">0</Property>
+      <Property name="TransformType">None</Property>
+      <Property name="TransformX">100</Property>
+      <Property name="TransformY">100</Property>
+      <Property name="LiveSetting">False</Property>
+      <Property name="Font">微软雅黑, 22px</Property>
+      <Property name="BackColor">Transparent</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Draggable">False</Property>
+      <Property name="Stretch">True</Property>
+      <Property name="BoldSize">1</Property>
+      <Property name="Size">99, 96</Property>
+      <Property name="TextAlign">MiddleCenter</Property>
+      <Property name="TabIndex">159</Property>
+      <Property name="BackgroundImageLayout">Stretch</Property>
+    </Object>
+    <Property name="ItemName">表信息</Property>
+    <Property name="ID">31</Property>
+    <Property name="ScreenBoundsEditEnable">Disable</Property>
+    <Property name="X">0</Property>
+    <Property name="Y">0</Property>
+    <Property name="BorderWidth">1280</Property>
+    <Property name="BorderHeight">800</Property>
+    <Property name="BgColor">Gainsboro</Property>
+    <Property name="BgImagePath">0-底图.jpg</Property>
+    <Property name="AutoScaleMode">Inherit</Property>
+    <Property name="Name">表信息</Property>
+    <Property name="DoubleBuffered">False</Property>
+  </Object>
+</ITU>

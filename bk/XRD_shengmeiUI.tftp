@@ -1,0 +1,802 @@
+﻿<Project>
+  <Config>
+    <Property Name="ProjectName">XRD_shengmeiUI</Property>
+    <Property Name="DeviceType">XH121GVW01C</Property>
+    <Property Name="StartupLogoPath">0-开机画面.jpg</Property>
+    <Property Name="StartupScreen">治疗头未识别</Property>
+    <Property Name="SystemLanguage">中文</Property>
+    <Property Name="RotateScreen">rot_0</Property>
+    <Property Name="ScreenOrientation">Landscape</Property>
+    <Property Name="SlidingSwitchScreen">Disable</Property>
+    <Property Name="SlidingDirection">Horizontal</Property>
+    <Property Name="SlidingRange">AllScreen</Property>
+    <Property Name="BeginScreen">
+    </Property>
+    <Property Name="EndScreen">
+    </Property>
+    <Property Name="BacklightOn">200</Property>
+    <Property Name="BacklightAutoControl">No</Property>
+    <Property Name="BacklightTime">300</Property>
+    <Property Name="BacklightOff">50</Property>
+    <Property Name="BacklightNotify">Enable</Property>
+    <Property Name="StandbyPage">
+    </Property>
+    <Property Name="TouchPane">Enable</Property>
+    <Property Name="KeySoundFile">3.mp3</Property>
+    <Property Name="KeySoundLevel">80</Property>
+    <Property Name="TouchSound">Beep_pressControl</Property>
+    <Property Name="SoundSource">Speaker</Property>
+    <Property Name="SpeakerVolume">80</Property>
+    <Property Name="UserName" />
+    <Property Name="UserPassword" />
+    <Property Name="CRC16">Yes</Property>
+    <Property Name="LockConfiguration">No</Property>
+    <Property Name="FrameHead">EE</Property>
+    <Property Name="FrameTail">FF FC FF FF</Property>
+    <Property Name="CoordinateUpdate">Disable</Property>
+    <Property Name="SwitchScreenEvent">Disable</Property>
+    <Property Name="ButtonEvent">PressDownOrRelease</Property>
+    <Property Name="Network">Disable</Property>
+    <Property Name="SSID">
+    </Property>
+    <Property Name="Password">
+    </Property>
+    <Property Name="Secumode">0-AUTO</Property>
+    <Property Name="DHCP">Enable</Property>
+    <Property Name="IPAddress">192.168.1.100</Property>
+    <Property Name="NetMask">255.255.255.0</Property>
+    <Property Name="Gateway">192.168.1.1</Property>
+    <Property Name="DNSServer">192.168.1.1</Property>
+    <Property Name="NetworkMode">Disable</Property>
+    <Property Name="ServerAddress">192.168.1.200</Property>
+    <Property Name="ServerPort">5050</Property>
+    <Property Name="Passthrough">No</Property>
+    <Property Name="MutiLangLabels">
+      <Label Index="0">中文</Label>
+      <Label Index="1">语言2</Label>
+    </Property>
+    <Property Name="StartupLanguage">0</Property>
+    <Property Name="RecipeEnable">True</Property>
+    <Property Name="SelectedPortLabes">1,1,19,115200,N,1,8_0,1,20,115200,N,1,8</Property>
+    <Property Name="ModbusEnable">0</Property>
+    <Property Name="Name">prjCfg</Property>
+  </Config>
+  <Layers>
+    <Layer Name="开机界面" ID="0" />
+    <Layer Name="治疗头未识别" ID="1">
+      <SubControl Name="Icon_1" ID="22" />
+      <SubControl Name="Icon_11" ID="17" />
+      <SubControl Name="Icon_12" ID="16" />
+      <SubControl Name="Text_6" ID="15" />
+      <SubControl Name="Text_5" ID="14" />
+      <SubControl Name="Text_2" ID="13" />
+      <SubControl Name="Label_3" ID="26" />
+      <SubControl Name="Label_2" ID="23" />
+      <SubControl Name="Button_17" ID="21" />
+      <SubControl Name="Button_16" ID="20" />
+      <SubControl Name="Button_13" ID="12" />
+      <SubControl Name="Button_12" ID="11" />
+      <SubControl Name="Button_11" ID="10" />
+      <SubControl Name="Button_10" ID="9" />
+      <SubControl Name="Button_9" ID="8" />
+      <SubControl Name="Button_8" ID="7" />
+      <SubControl Name="Button_7" ID="6" />
+      <SubControl Name="Button_6" ID="5" />
+      <SubControl Name="Button_5" ID="4" />
+      <SubControl Name="Button_3" ID="3" />
+      <SubControl Name="Button_2" ID="2" />
+      <SubControl Name="QRCode_1" ID="25" />
+      <SubControl Name="Button_1" ID="1" />
+      <SubControl Name="Text_4" ID="19" />
+      <SubControl Name="Text_3" ID="18" />
+      <SubControl Name="Text_1" ID="24" />
+    </Layer>
+    <Layer Name="治疗头未识别按下" ID="2" />
+    <Layer Name="治疗进行中" ID="3">
+      <SubControl Name="Icon_3" ID="7" />
+      <SubControl Name="Icon_1" ID="8" />
+      <SubControl Name="Text_5" ID="20" />
+      <SubControl Name="Icon_11" ID="17" />
+      <SubControl Name="Icon_12" ID="16" />
+      <SubControl Name="Button_16" ID="21" />
+      <SubControl Name="Icon_2" ID="14" />
+      <SubControl Name="Text_1" ID="11" />
+      <SubControl Name="Button_6" ID="6" />
+      <SubControl Name="Button_5" ID="5" />
+      <SubControl Name="Button_4" ID="4" />
+      <SubControl Name="Button_3" ID="3" />
+      <SubControl Name="Button_2" ID="2" />
+      <SubControl Name="Text_4" ID="19" />
+      <SubControl Name="Text_3" ID="18" />
+      <SubControl Name="Button_1" ID="1" />
+    </Layer>
+    <Layer Name="治疗进行中按下" ID="4" />
+    <Layer Name="设置界面" ID="5">
+      <SubControl Name="Button_1" ID="17" />
+      <SubControl Name="Text_6" ID="16" />
+      <SubControl Name="Text_5" ID="15" />
+      <SubControl Name="Text_4" ID="14" />
+      <SubControl Name="Text_3" ID="13" />
+      <SubControl Name="Text_2" ID="12" />
+      <SubControl Name="Text_1" ID="11" />
+      <SubControl Name="Button_16" ID="4" />
+      <SubControl Name="Icon_2" ID="2" />
+      <SubControl Name="Icon_1" ID="3" />
+      <SubControl Name="TrackBar_1" ID="1" />
+      <SubControl Name="TrackBar_4" ID="20" />
+    </Layer>
+    <Layer Name="设置界面按下" ID="6" />
+    <Layer Name="工程师密码界面" ID="7">
+      <SubControl Name="Button_41" ID="1" />
+      <SubControl Name="Button_40" ID="15" />
+      <SubControl Name="Button_39" ID="14" />
+      <SubControl Name="Text_1" ID="13" />
+      <SubControl Name="Button_32" ID="12" />
+      <SubControl Name="Button_31" ID="11" />
+      <SubControl Name="Button_21" ID="120" />
+      <SubControl Name="Button_33" ID="98" />
+      <SubControl Name="Button_34" ID="110" />
+      <SubControl Name="Button_35" ID="109" />
+      <SubControl Name="Button_36" ID="99" />
+      <SubControl Name="Button_37" ID="118" />
+      <SubControl Name="Button_38" ID="122" />
+      <SubControl Name="Button_22" ID="115" />
+      <SubControl Name="Button_23" ID="107" />
+      <SubControl Name="Button_24" ID="108" />
+      <SubControl Name="Button_25" ID="103" />
+      <SubControl Name="Button_26" ID="104" />
+      <SubControl Name="Button_27" ID="106" />
+      <SubControl Name="Button_28" ID="100" />
+      <SubControl Name="Button_29" ID="102" />
+      <SubControl Name="Button_30" ID="97" />
+      <SubControl Name="Button_11" ID="112" />
+      <SubControl Name="Button_12" ID="119" />
+      <SubControl Name="Button_13" ID="105" />
+      <SubControl Name="Button_14" ID="111" />
+      <SubControl Name="Button_15" ID="116" />
+      <SubControl Name="Button_16" ID="121" />
+      <SubControl Name="Button_17" ID="117" />
+      <SubControl Name="Button_18" ID="101" />
+      <SubControl Name="Button_19" ID="114" />
+      <SubControl Name="Button_20" ID="113" />
+      <SubControl Name="Button_4" ID="48" />
+      <SubControl Name="Button_10" ID="50" />
+      <SubControl Name="Button_9" ID="56" />
+      <SubControl Name="Button_8" ID="57" />
+      <SubControl Name="Button_7" ID="53" />
+      <SubControl Name="Button_6" ID="54" />
+      <SubControl Name="Button_5" ID="55" />
+      <SubControl Name="Button_3" ID="51" />
+      <SubControl Name="Button_2" ID="52" />
+      <SubControl Name="Button_1" ID="49" />
+      <SubControl Name="QRCode_1" ID="45" />
+    </Layer>
+    <Layer Name="工程师密码界面按下" ID="8" />
+    <Layer Name="工程师功能选择界面" ID="9">
+      <SubControl Name="Button_8" ID="9" />
+      <SubControl Name="Button_7" ID="8" />
+      <SubControl Name="Button_6" ID="7" />
+      <SubControl Name="Button_5" ID="6" />
+      <SubControl Name="Button_4" ID="5" />
+      <SubControl Name="Button_3" ID="4" />
+      <SubControl Name="Button_2" ID="3" />
+      <SubControl Name="Button_1" ID="2" />
+      <SubControl Name="Button_40" ID="1" />
+    </Layer>
+    <Layer Name="工程师功能选择界面按下" ID="10" />
+    <Layer Name="电源及阻抗界面" ID="11">
+      <SubControl Name="Button_10" ID="21" />
+      <SubControl Name="Label_1" ID="20" />
+      <SubControl Name="Button_9" ID="19" />
+      <SubControl Name="Text_9" ID="18" />
+      <SubControl Name="Button_8" ID="17" />
+      <SubControl Name="Button_7" ID="16" />
+      <SubControl Name="Text_8" ID="15" />
+      <SubControl Name="Button_40" ID="14" />
+      <SubControl Name="Text_7" ID="13" />
+      <SubControl Name="Text_6" ID="12" />
+      <SubControl Name="Text_5" ID="11" />
+      <SubControl Name="Text_4" ID="10" />
+      <SubControl Name="Text_3" ID="9" />
+      <SubControl Name="Text_2" ID="8" />
+      <SubControl Name="Button_6" ID="7" />
+      <SubControl Name="Button_5" ID="6" />
+      <SubControl Name="Button_4" ID="5" />
+      <SubControl Name="Button_3" ID="4" />
+      <SubControl Name="Button_2" ID="3" />
+      <SubControl Name="Button_1" ID="2" />
+      <SubControl Name="Text_1" ID="1" />
+    </Layer>
+    <Layer Name="电源及阻抗界面按下" ID="12" />
+    <Layer Name="继电器控制界面" ID="13">
+      <SubControl Name="Label_29" ID="71" />
+      <SubControl Name="Button_25" ID="70" />
+      <SubControl Name="Text_15" ID="68" />
+      <SubControl Name="Text_14" ID="67" />
+      <SubControl Name="Text_13" ID="66" />
+      <SubControl Name="Text_12" ID="65" />
+      <SubControl Name="Text_11" ID="64" />
+      <SubControl Name="Text_10" ID="62" />
+      <SubControl Name="Text_1" ID="61" />
+      <SubControl Name="Text_9" ID="52" />
+      <SubControl Name="Text_8" ID="60" />
+      <SubControl Name="Text_7" ID="59" />
+      <SubControl Name="Text_6" ID="58" />
+      <SubControl Name="Text_4" ID="56" />
+      <SubControl Name="Text_5" ID="57" />
+      <SubControl Name="Text_3" ID="55" />
+      <SubControl Name="Text_2" ID="53" />
+      <SubControl Name="Rectangle_3" ID="54" />
+      <SubControl Name="Button_40" ID="24" />
+      <SubControl Name="Label_27" ID="51" />
+      <SubControl Name="Label_26" ID="50" />
+      <SubControl Name="Label_25" ID="49" />
+      <SubControl Name="Label_24" ID="48" />
+      <SubControl Name="Label_23" ID="47" />
+      <SubControl Name="Label_22" ID="46" />
+      <SubControl Name="Label_20" ID="44" />
+      <SubControl Name="Label_18" ID="42" />
+      <SubControl Name="Label_17" ID="41" />
+      <SubControl Name="Label_16" ID="40" />
+      <SubControl Name="Label_15" ID="39" />
+      <SubControl Name="Label_14" ID="38" />
+      <SubControl Name="Label_13" ID="37" />
+      <SubControl Name="Label_12" ID="36" />
+      <SubControl Name="Label_10" ID="34" />
+      <SubControl Name="Label_9" ID="33" />
+      <SubControl Name="Label_8" ID="32" />
+      <SubControl Name="Label_7" ID="31" />
+      <SubControl Name="Label_6" ID="30" />
+      <SubControl Name="Label_5" ID="29" />
+      <SubControl Name="Label_4" ID="28" />
+      <SubControl Name="Label_2" ID="26" />
+      <SubControl Name="Label_1" ID="25" />
+      <SubControl Name="Button_23" ID="22" />
+      <SubControl Name="Button_22" ID="23" />
+      <SubControl Name="Button_21" ID="21" />
+      <SubControl Name="Button_20" ID="20" />
+      <SubControl Name="Button_19" ID="19" />
+      <SubControl Name="Button_18" ID="18" />
+      <SubControl Name="Button_17" ID="17" />
+      <SubControl Name="Button_16" ID="16" />
+      <SubControl Name="Button_15" ID="15" />
+      <SubControl Name="Button_14" ID="14" />
+      <SubControl Name="Button_13" ID="13" />
+      <SubControl Name="Button_12" ID="12" />
+      <SubControl Name="Button_11" ID="11" />
+      <SubControl Name="Button_10" ID="10" />
+      <SubControl Name="Button_9" ID="9" />
+      <SubControl Name="Button_8" ID="8" />
+      <SubControl Name="Button_7" ID="7" />
+      <SubControl Name="Button_5" ID="6" />
+      <SubControl Name="Button_4" ID="5" />
+      <SubControl Name="Button_3" ID="4" />
+      <SubControl Name="Button_2" ID="3" />
+      <SubControl Name="Button_1" ID="2" />
+      <SubControl Name="Button_6" ID="1" />
+    </Layer>
+    <Layer Name="继电器控制界面按下" ID="14" />
+    <Layer Name="阻抗分布匹配界面" ID="15">
+      <SubControl Name="Text_36" ID="58" />
+      <SubControl Name="Label_1" ID="57" />
+      <SubControl Name="Text_35" ID="55" />
+      <SubControl Name="Button_20" ID="60" />
+      <SubControl Name="Icon_3" ID="56" />
+      <SubControl Name="Text_34" ID="54" />
+      <SubControl Name="Icon_1" ID="53" />
+      <SubControl Name="Button_19" ID="52" />
+      <SubControl Name="Button_18" ID="51" />
+      <SubControl Name="Button_17" ID="50" />
+      <SubControl Name="Text_33" ID="49" />
+      <SubControl Name="Text_32" ID="48" />
+      <SubControl Name="Text_31" ID="47" />
+      <SubControl Name="Text_30" ID="46" />
+      <SubControl Name="Text_29" ID="45" />
+      <SubControl Name="Text_28" ID="44" />
+      <SubControl Name="Text_27" ID="43" />
+      <SubControl Name="Text_26" ID="42" />
+      <SubControl Name="Text_25" ID="41" />
+      <SubControl Name="Text_24" ID="40" />
+      <SubControl Name="Text_23" ID="39" />
+      <SubControl Name="Text_22" ID="38" />
+      <SubControl Name="Text_21" ID="37" />
+      <SubControl Name="Text_20" ID="36" />
+      <SubControl Name="Text_19" ID="35" />
+      <SubControl Name="Text_18" ID="34" />
+      <SubControl Name="Text_17" ID="33" />
+      <SubControl Name="Text_16" ID="32" />
+      <SubControl Name="Text_15" ID="31" />
+      <SubControl Name="Text_14" ID="30" />
+      <SubControl Name="Text_13" ID="29" />
+      <SubControl Name="Text_12" ID="28" />
+      <SubControl Name="Text_11" ID="27" />
+      <SubControl Name="Text_10" ID="26" />
+      <SubControl Name="Text_9" ID="25" />
+      <SubControl Name="Text_8" ID="24" />
+      <SubControl Name="Text_7" ID="23" />
+      <SubControl Name="Text_6" ID="22" />
+      <SubControl Name="Text_5" ID="21" />
+      <SubControl Name="Text_4" ID="20" />
+      <SubControl Name="Text_3" ID="19" />
+      <SubControl Name="Text_2" ID="18" />
+      <SubControl Name="Text_1" ID="17" />
+      <SubControl Name="Button_16" ID="16" />
+      <SubControl Name="Button_15" ID="15" />
+      <SubControl Name="Button_14" ID="14" />
+      <SubControl Name="Button_13" ID="13" />
+      <SubControl Name="Button_12" ID="12" />
+      <SubControl Name="Button_11" ID="11" />
+      <SubControl Name="Button_10" ID="10" />
+      <SubControl Name="Button_9" ID="9" />
+      <SubControl Name="Button_8" ID="8" />
+      <SubControl Name="Button_7" ID="7" />
+      <SubControl Name="Button_6" ID="6" />
+      <SubControl Name="Button_5" ID="5" />
+      <SubControl Name="Button_4" ID="4" />
+      <SubControl Name="Button_3" ID="3" />
+      <SubControl Name="Button_2" ID="2" />
+      <SubControl Name="Button_1" ID="1" />
+      <SubControl Name="Button_40" ID="70" />
+    </Layer>
+    <Layer Name="阻抗分布匹配界面按下" ID="16">
+      <SubControl Name="Button_2" ID="3" />
+      <SubControl Name="Text_1" ID="2" />
+      <SubControl Name="Button_1" ID="1" />
+    </Layer>
+    <Layer Name="状态查看界面" ID="17">
+      <SubControl Name="Text_7" ID="43" />
+      <SubControl Name="Button_12" ID="41" />
+      <SubControl Name="Text_6" ID="42" />
+      <SubControl Name="Text_5" ID="7" />
+      <SubControl Name="Icon_4" ID="22" />
+      <SubControl Name="Icon_5" ID="23" />
+      <SubControl Name="Icon_3" ID="6" />
+      <SubControl Name="Icon_2" ID="5" />
+      <SubControl Name="DigitalClock_1" ID="40" />
+      <SubControl Name="Text_33" ID="39" />
+      <SubControl Name="Icon_1" ID="38" />
+      <SubControl Name="Button_11" ID="37" />
+      <SubControl Name="Button_10" ID="36" />
+      <SubControl Name="Button_9" ID="35" />
+      <SubControl Name="Button_8" ID="34" />
+      <SubControl Name="Button_7" ID="33" />
+      <SubControl Name="Button_5" ID="32" />
+      <SubControl Name="Button_4" ID="31" />
+      <SubControl Name="Button_3" ID="30" />
+      <SubControl Name="Button_2" ID="29" />
+      <SubControl Name="Button_1" ID="28" />
+      <SubControl Name="Button_6" ID="27" />
+      <SubControl Name="Text_26" ID="26" />
+      <SubControl Name="Text_25" ID="25" />
+      <SubControl Name="Text_24" ID="24" />
+      <SubControl Name="Text_21" ID="21" />
+      <SubControl Name="Text_20" ID="20" />
+      <SubControl Name="Text_19" ID="19" />
+      <SubControl Name="Text_18" ID="18" />
+      <SubControl Name="Text_17" ID="17" />
+      <SubControl Name="Text_16" ID="16" />
+      <SubControl Name="Text_15" ID="15" />
+      <SubControl Name="Text_14" ID="14" />
+      <SubControl Name="Text_13" ID="13" />
+      <SubControl Name="Text_12" ID="12" />
+      <SubControl Name="Text_11" ID="11" />
+      <SubControl Name="Text_10" ID="10" />
+      <SubControl Name="Text_9" ID="9" />
+      <SubControl Name="Text_8" ID="8" />
+      <SubControl Name="Text_4" ID="4" />
+      <SubControl Name="Text_3" ID="1" />
+      <SubControl Name="Text_2" ID="3" />
+      <SubControl Name="Text_1" ID="2" />
+      <SubControl Name="Button_40" ID="70" />
+    </Layer>
+    <Layer Name="状态查看界面按下" ID="18" />
+    <Layer Name="射频校准界面" ID="19">
+      <SubControl Name="Text_40" ID="49" />
+      <SubControl Name="Button_11" ID="48" />
+      <SubControl Name="Button_10" ID="47" />
+      <SubControl Name="Button_9" ID="46" />
+      <SubControl Name="Button_8" ID="45" />
+      <SubControl Name="Button_7" ID="44" />
+      <SubControl Name="Text_39" ID="43" />
+      <SubControl Name="Text_38" ID="29" />
+      <SubControl Name="Text_37" ID="42" />
+      <SubControl Name="Button_6" ID="41" />
+      <SubControl Name="Button_5" ID="40" />
+      <SubControl Name="Text_36" ID="38" />
+      <SubControl Name="Text_35" ID="37" />
+      <SubControl Name="Text_34" ID="36" />
+      <SubControl Name="Text_33" ID="35" />
+      <SubControl Name="Text_32" ID="39" />
+      <SubControl Name="Text_31" ID="34" />
+      <SubControl Name="Text_30" ID="33" />
+      <SubControl Name="Text_29" ID="32" />
+      <SubControl Name="Text_28" ID="31" />
+      <SubControl Name="Text_27" ID="30" />
+      <SubControl Name="Text_26" ID="28" />
+      <SubControl Name="Text_25" ID="27" />
+      <SubControl Name="Text_24" ID="26" />
+      <SubControl Name="Text_23" ID="25" />
+      <SubControl Name="Text_22" ID="24" />
+      <SubControl Name="Text_58" ID="1" />
+      <SubControl Name="Text_57" ID="2" />
+      <SubControl Name="Text_15" ID="3" />
+      <SubControl Name="Text_16" ID="4" />
+      <SubControl Name="Text_17" ID="5" />
+      <SubControl Name="Text_18" ID="6" />
+      <SubControl Name="Text_19" ID="7" />
+      <SubControl Name="Text_20" ID="8" />
+      <SubControl Name="Text_21" ID="9" />
+      <SubControl Name="Text_14" ID="10" />
+      <SubControl Name="Text_13" ID="11" />
+      <SubControl Name="Text_12" ID="12" />
+      <SubControl Name="Text_11" ID="13" />
+      <SubControl Name="Text_10" ID="14" />
+      <SubControl Name="Text_9" ID="15" />
+      <SubControl Name="Text_8" ID="16" />
+      <SubControl Name="Text_7" ID="17" />
+      <SubControl Name="Text_6" ID="18" />
+      <SubControl Name="Text_5" ID="19" />
+      <SubControl Name="Text_4" ID="20" />
+      <SubControl Name="Text_2" ID="21" />
+      <SubControl Name="Text_1" ID="22" />
+      <SubControl Name="Text_3" ID="23" />
+      <SubControl Name="Button_4" ID="54" />
+      <SubControl Name="Button_3" ID="53" />
+      <SubControl Name="Button_1" ID="51" />
+      <SubControl Name="Button_2" ID="52" />
+      <SubControl Name="Button_40" ID="57" />
+    </Layer>
+    <Layer Name="射频校准界面按下" ID="20" />
+    <Layer Name="时间校准" ID="21">
+      <SubControl Name="Text_8" ID="11" />
+      <SubControl Name="DigitalClock_1" ID="10" />
+      <SubControl Name="Button_1" ID="9" />
+      <SubControl Name="Text_7" ID="8" />
+      <SubControl Name="Text_6" ID="7" />
+      <SubControl Name="Text_5" ID="6" />
+      <SubControl Name="Text_4" ID="5" />
+      <SubControl Name="Text_3" ID="4" />
+      <SubControl Name="Text_2" ID="3" />
+      <SubControl Name="Button_40" ID="1" />
+    </Layer>
+    <Layer Name="时间校准按下" ID="22" />
+    <Layer Name="升级界面" ID="23">
+      <SubControl Name="Text_2" ID="7" />
+      <SubControl Name="Icon_2" ID="5" />
+      <SubControl Name="Icon_1" ID="4" />
+      <SubControl Name="Button_1" ID="3" />
+      <SubControl Name="ProgressBar_1" ID="2" />
+      <SubControl Name="Text_1" ID="1" />
+      <SubControl Name="Button_2" ID="6" />
+    </Layer>
+    <Layer Name="功率调试界面" ID="24">
+      <SubControl Name="Text_42" ID="62" />
+      <SubControl Name="Text_41" ID="61" />
+      <SubControl Name="Text_39" ID="59" />
+      <SubControl Name="Text_40" ID="60" />
+      <SubControl Name="Text_37" ID="57" />
+      <SubControl Name="Text_38" ID="58" />
+      <SubControl Name="Text_36" ID="56" />
+      <SubControl Name="Text_35" ID="55" />
+      <SubControl Name="Text_34" ID="54" />
+      <SubControl Name="Text_21" ID="40" />
+      <SubControl Name="Text_33" ID="53" />
+      <SubControl Name="Text_32" ID="52" />
+      <SubControl Name="Text_31" ID="51" />
+      <SubControl Name="Text_30" ID="50" />
+      <SubControl Name="Text_29" ID="49" />
+      <SubControl Name="Text_28" ID="48" />
+      <SubControl Name="Text_27" ID="47" />
+      <SubControl Name="Text_26" ID="46" />
+      <SubControl Name="Text_25" ID="45" />
+      <SubControl Name="Text_24" ID="44" />
+      <SubControl Name="Text_20" ID="39" />
+      <SubControl Name="Menu_2" ID="7" />
+      <SubControl Name="Menu_1" ID="6" />
+      <SubControl Name="Text_23" ID="41" />
+      <SubControl Name="Rectangle_8" ID="42" />
+      <SubControl Name="Button_8" ID="43" />
+      <SubControl Name="Text_22" ID="38" />
+      <SubControl Name="Text_19" ID="37" />
+      <SubControl Name="Text_17" ID="34" />
+      <SubControl Name="Text_18" ID="35" />
+      <SubControl Name="Text_13" ID="32" />
+      <SubControl Name="Text_16" ID="33" />
+      <SubControl Name="Text_12" ID="31" />
+      <SubControl Name="Text_11" ID="30" />
+      <SubControl Name="Text_10" ID="29" />
+      <SubControl Name="Text_9" ID="28" />
+      <SubControl Name="Text_8" ID="27" />
+      <SubControl Name="Text_15" ID="5" />
+      <SubControl Name="Text_14" ID="22" />
+      <SubControl Name="Button_1" ID="4" />
+      <SubControl Name="Button_40" ID="21" />
+      <SubControl Name="Button_7" ID="17" />
+      <SubControl Name="Button_6" ID="16" />
+      <SubControl Name="Button_5" ID="15" />
+      <SubControl Name="Button_4" ID="13" />
+      <SubControl Name="Button_3" ID="12" />
+      <SubControl Name="Text_3" ID="10" />
+      <SubControl Name="Text_2" ID="9" />
+      <SubControl Name="Text_1" ID="8" />
+      <SubControl Name="Rectangle_3" ID="3" />
+      <SubControl Name="Rectangle_2" ID="2" />
+      <SubControl Name="Rectangle_1" ID="1" />
+      <SubControl Name="Button_2" ID="11" />
+      <SubControl Name="Table_1" ID="14" />
+      <SubControl Name="Rectangle_4" ID="18" />
+      <SubControl Name="Rectangle_5" ID="19" />
+      <SubControl Name="Rectangle_6" ID="20" />
+      <SubControl Name="Text_5" ID="24" />
+      <SubControl Name="Text_4" ID="23" />
+      <SubControl Name="Text_6" ID="25" />
+      <SubControl Name="Text_7" ID="26" />
+      <SubControl Name="Rectangle_7" ID="36" />
+    </Layer>
+    <Layer Name="电压选择界面" ID="25">
+      <SubControl Name="Button_40" ID="71" />
+      <SubControl Name="Text_32" ID="67" />
+      <SubControl Name="Text_31" ID="66" />
+      <SubControl Name="Text_30" ID="65" />
+      <SubControl Name="Text_29" ID="64" />
+      <SubControl Name="Text_28" ID="63" />
+      <SubControl Name="Text_27" ID="62" />
+      <SubControl Name="Text_26" ID="61" />
+      <SubControl Name="Text_25" ID="60" />
+      <SubControl Name="Text_24" ID="59" />
+      <SubControl Name="Text_23" ID="58" />
+      <SubControl Name="Text_22" ID="57" />
+      <SubControl Name="Text_21" ID="56" />
+      <SubControl Name="Text_20" ID="55" />
+      <SubControl Name="Text_19" ID="54" />
+      <SubControl Name="Text_18" ID="53" />
+      <SubControl Name="Text_17" ID="52" />
+      <SubControl Name="Text_16" ID="51" />
+      <SubControl Name="Text_15" ID="50" />
+      <SubControl Name="Text_14" ID="49" />
+      <SubControl Name="Text_13" ID="48" />
+      <SubControl Name="Text_12" ID="47" />
+      <SubControl Name="Text_11" ID="46" />
+      <SubControl Name="Text_10" ID="45" />
+      <SubControl Name="Text_9" ID="44" />
+      <SubControl Name="Text_8" ID="43" />
+      <SubControl Name="Text_7" ID="42" />
+      <SubControl Name="Text_6" ID="41" />
+      <SubControl Name="Button_32" ID="32" />
+      <SubControl Name="Button_31" ID="31" />
+      <SubControl Name="Button_30" ID="30" />
+      <SubControl Name="Button_29" ID="29" />
+      <SubControl Name="Button_28" ID="28" />
+      <SubControl Name="Button_27" ID="27" />
+      <SubControl Name="Button_26" ID="26" />
+      <SubControl Name="Button_25" ID="25" />
+      <SubControl Name="Button_24" ID="24" />
+      <SubControl Name="Button_23" ID="23" />
+      <SubControl Name="Button_22" ID="22" />
+      <SubControl Name="Button_21" ID="21" />
+      <SubControl Name="Button_20" ID="20" />
+      <SubControl Name="Button_19" ID="19" />
+      <SubControl Name="Button_18" ID="18" />
+      <SubControl Name="Button_17" ID="17" />
+      <SubControl Name="Button_16" ID="16" />
+      <SubControl Name="Button_15" ID="15" />
+      <SubControl Name="Button_14" ID="14" />
+      <SubControl Name="Button_13" ID="13" />
+      <SubControl Name="Button_12" ID="12" />
+      <SubControl Name="Button_11" ID="11" />
+      <SubControl Name="Button_10" ID="10" />
+      <SubControl Name="Button_9" ID="9" />
+      <SubControl Name="Button_8" ID="8" />
+      <SubControl Name="Button_7" ID="7" />
+      <SubControl Name="Button_6" ID="6" />
+    </Layer>
+    <Layer Name="当前错误界面" ID="26">
+      <SubControl Name="Button_1" ID="10" />
+      <SubControl Name="Text_31" ID="60" />
+      <SubControl Name="Text_32" ID="59" />
+      <SubControl Name="Text_33" ID="58" />
+      <SubControl Name="Text_34" ID="57" />
+      <SubControl Name="Text_35" ID="56" />
+      <SubControl Name="Text_36" ID="55" />
+      <SubControl Name="Text_37" ID="54" />
+      <SubControl Name="Text_38" ID="53" />
+      <SubControl Name="Text_39" ID="52" />
+      <SubControl Name="Text_40" ID="51" />
+      <SubControl Name="Text_10" ID="50" />
+      <SubControl Name="Text_9" ID="49" />
+      <SubControl Name="Text_8" ID="48" />
+      <SubControl Name="Text_7" ID="47" />
+      <SubControl Name="Text_6" ID="46" />
+      <SubControl Name="Text_5" ID="45" />
+      <SubControl Name="Text_4" ID="44" />
+      <SubControl Name="Text_3" ID="43" />
+      <SubControl Name="Text_2" ID="42" />
+      <SubControl Name="Text_1" ID="41" />
+      <SubControl Name="Button_40" ID="1" />
+    </Layer>
+    <Layer Name="已发生错误界面" ID="27">
+      <SubControl Name="Button_40" ID="1" />
+      <SubControl Name="Button_1" ID="10" />
+      <SubControl Name="Text_31" ID="60" />
+      <SubControl Name="Text_32" ID="59" />
+      <SubControl Name="Text_33" ID="58" />
+      <SubControl Name="Text_34" ID="57" />
+      <SubControl Name="Text_35" ID="56" />
+      <SubControl Name="Text_36" ID="55" />
+      <SubControl Name="Text_37" ID="54" />
+      <SubControl Name="Text_38" ID="53" />
+      <SubControl Name="Text_39" ID="52" />
+      <SubControl Name="Text_40" ID="51" />
+      <SubControl Name="Text_10" ID="50" />
+      <SubControl Name="Text_9" ID="49" />
+      <SubControl Name="Text_8" ID="48" />
+      <SubControl Name="Text_7" ID="47" />
+      <SubControl Name="Text_6" ID="46" />
+      <SubControl Name="Text_5" ID="45" />
+      <SubControl Name="Text_4" ID="44" />
+      <SubControl Name="Text_3" ID="43" />
+      <SubControl Name="Text_2" ID="42" />
+      <SubControl Name="Text_1" ID="41" />
+    </Layer>
+    <Layer Name="验证界面" ID="28">
+      <SubControl Name="Text_16" ID="16" />
+      <SubControl Name="Text_13" ID="14" />
+      <SubControl Name="Button_10" ID="10" />
+      <SubControl Name="Button_9" ID="8" />
+      <SubControl Name="Text_9" ID="7" />
+      <SubControl Name="Button_8" ID="15" />
+      <SubControl Name="Text_12" ID="13" />
+      <SubControl Name="Text_11" ID="11" />
+      <SubControl Name="Menu_2" ID="29" />
+      <SubControl Name="Menu_1" ID="30" />
+      <SubControl Name="Button_14" ID="9" />
+      <SubControl Name="Text_8" ID="2" />
+      <SubControl Name="Rectangle_5" ID="4" />
+      <SubControl Name="Button_6" ID="12" />
+      <SubControl Name="Text_7" ID="1" />
+      <SubControl Name="Text_6" ID="6" />
+      <SubControl Name="Text_5" ID="5" />
+      <SubControl Name="Text_4" ID="40" />
+      <SubControl Name="Table_1" ID="35" />
+      <SubControl Name="Text_15" ID="17" />
+      <SubControl Name="Text_14" ID="18" />
+      <SubControl Name="Button_1" ID="19" />
+      <SubControl Name="Button_40" ID="20" />
+      <SubControl Name="Button_7" ID="21" />
+      <SubControl Name="Button_5" ID="23" />
+      <SubControl Name="Button_4" ID="24" />
+      <SubControl Name="Button_3" ID="25" />
+      <SubControl Name="Text_3" ID="26" />
+      <SubControl Name="Text_2" ID="27" />
+      <SubControl Name="Text_1" ID="28" />
+      <SubControl Name="Rectangle_3" ID="31" />
+      <SubControl Name="Rectangle_2" ID="32" />
+      <SubControl Name="Rectangle_1" ID="33" />
+      <SubControl Name="Button_2" ID="34" />
+      <SubControl Name="Text_10" ID="3" />
+    </Layer>
+    <Layer Name="验证结果界面" ID="29">
+      <SubControl Name="Text_50" ID="50" />
+      <SubControl Name="Text_49" ID="49" />
+      <SubControl Name="Text_48" ID="48" />
+      <SubControl Name="Text_47" ID="47" />
+      <SubControl Name="Text_46" ID="46" />
+      <SubControl Name="Text_45" ID="45" />
+      <SubControl Name="Text_44" ID="44" />
+      <SubControl Name="Text_43" ID="43" />
+      <SubControl Name="Text_42" ID="42" />
+      <SubControl Name="Text_41" ID="41" />
+      <SubControl Name="Text_36" ID="36" />
+      <SubControl Name="Text_37" ID="37" />
+      <SubControl Name="Text_38" ID="38" />
+      <SubControl Name="Text_39" ID="39" />
+      <SubControl Name="Text_40" ID="40" />
+      <SubControl Name="Text_35" ID="35" />
+      <SubControl Name="Text_34" ID="34" />
+      <SubControl Name="Text_33" ID="33" />
+      <SubControl Name="Text_32" ID="32" />
+      <SubControl Name="Text_31" ID="31" />
+      <SubControl Name="Text_30" ID="30" />
+      <SubControl Name="Text_29" ID="29" />
+      <SubControl Name="Text_28" ID="28" />
+      <SubControl Name="Text_27" ID="27" />
+      <SubControl Name="Text_26" ID="26" />
+      <SubControl Name="Text_25" ID="25" />
+      <SubControl Name="Text_24" ID="24" />
+      <SubControl Name="Text_23" ID="23" />
+      <SubControl Name="Text_22" ID="22" />
+      <SubControl Name="Text_21" ID="21" />
+      <SubControl Name="Text_20" ID="20" />
+      <SubControl Name="Text_19" ID="19" />
+      <SubControl Name="Text_18" ID="18" />
+      <SubControl Name="Text_17" ID="17" />
+      <SubControl Name="Text_16" ID="16" />
+      <SubControl Name="Text_15" ID="15" />
+      <SubControl Name="Text_14" ID="14" />
+      <SubControl Name="Text_13" ID="13" />
+      <SubControl Name="Text_12" ID="12" />
+      <SubControl Name="Text_11" ID="11" />
+      <SubControl Name="Text_10" ID="10" />
+      <SubControl Name="Text_9" ID="9" />
+      <SubControl Name="Text_8" ID="8" />
+      <SubControl Name="Text_7" ID="7" />
+      <SubControl Name="Text_6" ID="6" />
+      <SubControl Name="Text_5" ID="5" />
+      <SubControl Name="Text_4" ID="4" />
+      <SubControl Name="Text_3" ID="3" />
+      <SubControl Name="Text_2" ID="2" />
+      <SubControl Name="Text_1" ID="1" />
+      <SubControl Name="Button_40" ID="70" />
+    </Layer>
+    <Layer Name="档位选择" ID="30">
+      <SubControl Name="Button_40" ID="50" />
+      <SubControl Name="Text_16" ID="21" />
+      <SubControl Name="Text_15" ID="22" />
+      <SubControl Name="Text_14" ID="23" />
+      <SubControl Name="Text_13" ID="24" />
+      <SubControl Name="Text_12" ID="25" />
+      <SubControl Name="Text_11" ID="26" />
+      <SubControl Name="Text_10" ID="27" />
+      <SubControl Name="Text_9" ID="28" />
+      <SubControl Name="Text_8" ID="29" />
+      <SubControl Name="Text_7" ID="30" />
+      <SubControl Name="Text_6" ID="31" />
+      <SubControl Name="Text_5" ID="32" />
+      <SubControl Name="Text_4" ID="33" />
+      <SubControl Name="Text_3" ID="34" />
+      <SubControl Name="Text_2" ID="35" />
+      <SubControl Name="Text_1" ID="36" />
+      <SubControl Name="Button_16" ID="16" />
+      <SubControl Name="Button_15" ID="15" />
+      <SubControl Name="Button_14" ID="14" />
+      <SubControl Name="Button_13" ID="13" />
+      <SubControl Name="Button_12" ID="12" />
+      <SubControl Name="Button_11" ID="11" />
+      <SubControl Name="Button_10" ID="10" />
+      <SubControl Name="Button_9" ID="9" />
+      <SubControl Name="Button_8" ID="8" />
+      <SubControl Name="Button_7" ID="7" />
+      <SubControl Name="Button_6" ID="6" />
+      <SubControl Name="Button_5" ID="5" />
+      <SubControl Name="Button_4" ID="4" />
+      <SubControl Name="Button_3" ID="3" />
+      <SubControl Name="Button_2" ID="2" />
+      <SubControl Name="Button_1" ID="1" />
+    </Layer>
+    <Layer Name="身体头治疗进行中" ID="31">
+      <SubControl Name="Icon_3" ID="1" />
+      <SubControl Name="Button_16" ID="21" />
+      <SubControl Name="Icon_11" ID="17" />
+      <SubControl Name="Icon_12" ID="16" />
+      <SubControl Name="Text_4" ID="19" />
+      <SubControl Name="Text_3" ID="18" />
+      <SubControl Name="Text_5" ID="20" />
+      <SubControl Name="Icon_1" ID="8" />
+      <SubControl Name="Icon_2" ID="14" />
+      <SubControl Name="Text_1" ID="11" />
+      <SubControl Name="Button_6" ID="6" />
+      <SubControl Name="Button_5" ID="5" />
+      <SubControl Name="Button_4" ID="4" />
+      <SubControl Name="Button_3" ID="3" />
+    </Layer>
+    <Layer Name="V2头子治疗进行中" ID="32">
+      <SubControl Name="Icon_3" ID="7" />
+      <SubControl Name="Icon_2" ID="14" />
+      <SubControl Name="Text_1" ID="11" />
+      <SubControl Name="Button_5" ID="5" />
+      <SubControl Name="Button_4" ID="4" />
+      <SubControl Name="Button_3" ID="3" />
+      <SubControl Name="Text_5" ID="20" />
+      <SubControl Name="Button_2" ID="2" />
+      <SubControl Name="Button_1" ID="1" />
+      <SubControl Name="Icon_1" ID="8" />
+      <SubControl Name="Button_16" ID="21" />
+      <SubControl Name="Icon_11" ID="17" />
+      <SubControl Name="Icon_12" ID="16" />
+      <SubControl Name="Text_4" ID="19" />
+      <SubControl Name="Text_3" ID="18" />
+      <SubControl Name="Button_6" ID="6" />
+    </Layer>
+    <Layer Name="Layer_1" ID="33" />
+  </Layers>
+</Project>

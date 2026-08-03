@@ -1,0 +1,6 @@
+﻿<XRDMB>
+  <ports>
+    <protocolWidget PortID="1" PortLabel="" Protocol="1" Slave="1" CycleTime="200" DelayTime="10" ResponseTimeout="100" MultiRead="64" ScreenOptimize="0" SaveData="0" SaveDataFlag="1" />
+  </ports>
+  <instructs />
+</XRDMB>

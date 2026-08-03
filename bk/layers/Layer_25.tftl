@@ -1,0 +1,16 @@
+﻿<ITU>
+  <Object type="GUIDesigner.LayerWidget, GUIDesigner, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null" name="Layer_25" children="Controls">
+    <Property name="ItemName">Layer_25</Property>
+    <Property name="ID">23</Property>
+    <Property name="ScreenBoundsEditEnable">Disable</Property>
+    <Property name="X">0</Property>
+    <Property name="Y">0</Property>
+    <Property name="BorderWidth">1280</Property>
+    <Property name="BorderHeight">800</Property>
+    <Property name="BgColor">Gainsboro</Property>
+    <Property name="BgImagePath">3-升级.png</Property>
+    <Property name="AutoScaleMode">Inherit</Property>
+    <Property name="Name">Layer_25</Property>
+    <Property name="DoubleBuffered">False</Property>
+  </Object>
+</ITU>
