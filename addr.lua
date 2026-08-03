@@ -2835,14 +2835,6 @@ function uart_write_string(addr, str)
     uart_send_frame(0x02, addr, data, #data)
 end
 
-function uart_write_string(addr, str)
-    local data = {}
-    for i = 1, #str do
-        data[i] = string.byte(str, i)
-    end
-    uart_send_frame(0x02, addr, data, #data)
-end
-
 --================== 屏幕接收解析 ==================
 function GetErrorMessage(errorCode)
     local errorInfo = ErrorMessages[errorCode]
@@ -2994,6 +2986,7 @@ function bytesToFloatLE_manual(bytes)
     
     return intToFloat(intValue)
 end
+
 -- 32位整数转浮点数
 function intToFloat(intValue)
     -- 提取符号位、指数、尾数
@@ -3042,7 +3035,8 @@ function formatNumber5Digits(num)
     -- 第2-3位作为第二部分
     local part2_num = tonumber(string.sub(str, 2, 3))
     local part2 = tostring(part2_num)  -- 这样会去掉前导零
-    local part3 = string.sub(str, 4, 5)
+    local part3_num = tonumber(string.sub(str, 4, 5))
+    local part3 = tostring(part3_num)
     
     return "V"..part1 .. "." .. part2 .. "." .. part3
 end
