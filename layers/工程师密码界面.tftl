@@ -3559,9 +3559,9 @@
       <Property name="Delay">0</Property>
       <Property name="ItemName">Text_1</Property>
       <Property name="ID">13</Property>
-      <Property name="X">250</Property>
+      <Property name="X">259</Property>
       <Property name="Y">331</Property>
-      <Property name="BorderWidth">826</Property>
+      <Property name="BorderWidth">817</Property>
       <Property name="BorderHeight">79</Property>
       <Property name="PortSelectorEnable">False</Property>
       <Property name="Ports">
@@ -3582,7 +3582,7 @@
       <Property name="Draggable">False</Property>
       <Property name="Stretch">True</Property>
       <Property name="BoldSize">1</Property>
-      <Property name="Size">826, 79</Property>
+      <Property name="Size">817, 79</Property>
       <Property name="TextAlign">MiddleLeft</Property>
       <Property name="TabIndex">81</Property>
       <Property name="BackgroundImageLayout">Stretch</Property>
@@ -3869,7 +3869,7 @@
     <Property name="BorderWidth">1280</Property>
     <Property name="BorderHeight">800</Property>
     <Property name="BgColor">Gainsboro</Property>
-    <Property name="BgImagePath">8-1工程师进入界面 .jpg</Property>
+    <Property name="BgImagePath">8.jpg</Property>
     <Property name="AutoScaleMode">Inherit</Property>
     <Property name="Name">工程师密码界面</Property>
     <Property name="DoubleBuffered">False</Property>

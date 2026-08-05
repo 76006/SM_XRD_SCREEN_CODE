@@ -3,7 +3,7 @@
     <Property Name="ProjectName">XRD_shengmeiUI</Property>
     <Property Name="DeviceType">XH121GVW01C</Property>
     <Property Name="StartupLogoPath">0-开机画面.jpg</Property>
-    <Property Name="StartupScreen">治疗头未识别</Property>
+    <Property Name="StartupScreen">开机界面</Property>
     <Property Name="SystemLanguage">中文</Property>
     <Property Name="RotateScreen">rot_0</Property>
     <Property Name="ScreenOrientation">Landscape</Property>

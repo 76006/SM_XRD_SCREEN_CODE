@@ -1893,7 +1893,7 @@
       <Property name="MultipleLanguage">No</Property>
       <Property name="ItemName">Icon_12</Property>
       <Property name="ID">16</Property>
-      <Property name="X">67</Property>
+      <Property name="X">81</Property>
       <Property name="Y">121</Property>
       <Property name="BorderWidth">419</Property>
       <Property name="BorderHeight">410</Property>
@@ -1941,10 +1941,10 @@
       <Property name="MultipleLanguage">No</Property>
       <Property name="ItemName">Icon_11</Property>
       <Property name="ID">17</Property>
-      <Property name="X">174</Property>
-      <Property name="Y">222</Property>
-      <Property name="BorderWidth">214</Property>
-      <Property name="BorderHeight">206</Property>
+      <Property name="X">179</Property>
+      <Property name="Y">216</Property>
+      <Property name="BorderWidth">220</Property>
+      <Property name="BorderHeight">220</Property>
       <Property name="PortSelectorEnable">False</Property>
       <Property name="Ports">
       </Property>
@@ -1964,7 +1964,7 @@
       <Property name="Draggable">False</Property>
       <Property name="Stretch">True</Property>
       <Property name="BoldSize">1</Property>
-      <Property name="Size">214, 206</Property>
+      <Property name="Size">220, 220</Property>
       <Property name="TextAlign">MiddleCenter</Property>
       <Property name="TabIndex">56</Property>
       <Property name="BackgroundImageLayout">Stretch</Property>
@@ -1989,8 +1989,8 @@
       <Property name="MultipleLanguage">No</Property>
       <Property name="ItemName">Icon_1</Property>
       <Property name="ID">22</Property>
-      <Property name="X">1011</Property>
-      <Property name="Y">18</Property>
+      <Property name="X">1024</Property>
+      <Property name="Y">14</Property>
       <Property name="BorderWidth">125</Property>
       <Property name="BorderHeight">69</Property>
       <Property name="PortSelectorEnable">False</Property>

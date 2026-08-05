@@ -647,7 +647,7 @@
       <Property name="MinValue_">0</Property>
       <Property name="Precision_">0</Property>
       <Property name="InitVisible">Show</Property>
-      <Property name="DisplayedText">V2.0.00</Property>
+      <Property name="DisplayedText">V2.0.0</Property>
       <Property name="_FontSize">32</Property>
       <Property name="TextFont">ASC_CHS_22</Property>
       <Property name="Bold">No</Property>
@@ -684,7 +684,7 @@
       <Property name="TransformX">100</Property>
       <Property name="TransformY">100</Property>
       <Property name="LiveSetting">False</Property>
-      <Property name="Text">V2.0.00</Property>
+      <Property name="Text">V2.0.0</Property>
       <Property name="Font">微软雅黑, 32px</Property>
       <Property name="BackColor">Transparent</Property>
       <Property name="ForeColor">White</Property>

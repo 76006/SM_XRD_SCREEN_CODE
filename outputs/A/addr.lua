@@ -2886,6 +2886,7 @@ function bytesToFloatLE_manual(bytes)
     
     return intToFloat(intValue)
 end
+
 -- 32位整数转浮点数
 function intToFloat(intValue)
     -- 提取符号位、指数、尾数

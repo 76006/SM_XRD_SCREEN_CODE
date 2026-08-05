@@ -14,7 +14,7 @@ FA_OPEN_ALWAYS   = 0x10
 
 -- ================== 写变量通用函数 ==================
 Progress_value = 0
-Current_input_buff = ""--治疗头输入的密码
+Current_input_buff = ""--头端输入的密码
 Engineer_Password_input_buff="" --工程师输入的密码
 QR_CODE_INFO = ""
 Engineer_QR_CODE_INFO=""
@@ -70,7 +70,8 @@ Timer_ID={
     Uart_send_file =4,
     RF_Start =5,
     Verify_Gear_RF_Timer = 6,
-    Verify_file_send = 7
+    Verify_file_send = 7,
+    screen_change_flag = 8
 }
 
 data_frame = {
@@ -104,6 +105,7 @@ Timer_Info = {
     [Timer_ID.RF_Start] = {ID = Timer_ID.RF_Start, timeout = 10000, countdown =1 , timesrepeat = 0,curtimesrepeat = 0},
     [Timer_ID.Verify_Gear_RF_Timer] = {ID = Timer_ID.Verify_Gear_RF_Timer, timeout = 10000, countdown =1 , timesrepeat = 0,curtimesrepeat = 0},
     [Timer_ID.Verify_file_send] = {ID = Timer_ID.Verify_file_send, timeout = 1000, countdown =1 , timesrepeat = 0,curtimesrepeat = 0},
+    [Timer_ID.screen_change_flag] = {ID = Timer_ID.screen_change_flag, timeout = 2000, countdown =1 , timesrepeat = 1,curtimesrepeat = 0},
     
 }
 -- ================== 变量地址定义 ==================
@@ -112,17 +114,17 @@ VAR_ADDR={
     -- ============================================================================
     -- 基础信息变量
     -- ============================================================================
-    Model              = 0x3000,  -- 型号（与治疗头类型共用地址）
+    Model              = 0x3000,  -- 型号（与头端类型共用地址）
     Headcount          = 0x3040,  -- 发数
     Date               = 0x3080,  -- 日期（与生产日期共用地址）
     VerifyQrCode       = 0x31C0,  -- 验真二维码A
     Head_Ok            = 0x4002,  -- 头端有效标志
 
     -- ============================================================================
-    -- 治疗相关变量
+    -- 头端相关变量
     -- ============================================================================
-    TreatmentProgress  = 0x3260,  -- 治疗进度条
-    HeadIcon           = 0x3280,  -- 治疗头图标
+    TreatmentProgress  = 0x3260,  -- 头端进度条
+    HeadIcon           = 0x3280,  -- 头端图标
     ErrorInput         = 0x32A0,  -- 错误输入框
     CoolLevel          = 0x34E0,  -- 制冷档位
     CoolantIcon        = 0x32E0,  -- 冷媒剂图标变量
@@ -224,7 +226,7 @@ VAR_ADDR={
     BubbleSensor       = 0x3AD8,  -- 气泡传感器
 
     -- ============================================================================
-    -- 治疗头温度
+    -- 头端温度
     -- ============================================================================
     Head1Temp          = 0x2310,  -- 头1温度
     Head2Temp          = 0x2320,  -- 头2温度
@@ -236,9 +238,9 @@ VAR_ADDR={
     -- ============================================================================
     HandpiecePressure  = 0x2350,  -- 手具压力
     MagneticForce      = 0x2360,  -- 磁力
-    -- HeadType           = 0x3000,  -- 治疗头类型（与型号共用地址）
-    HeadVersion        = 0x2420,  -- 治疗头版本
-    HeadId             = 0x2440,  -- 治疗头ID
+    -- HeadType           = 0x3000,  -- 头端类型（与型号共用地址）
+    HeadVersion        = 0x2420,  -- 头端版本
+    HeadId             = 0x2440,  -- 头端ID
     TotalCycles        = 0x2460,  -- 总次数
     RemainingCycycles  = 0x2470,  -- 剩余次数
     ProduceDate        = 0x3080,  -- 生产日期（与日期共用地址）
@@ -256,7 +258,7 @@ VAR_ADDR={
     -- 压力阈值
     -- ============================================================================
     PressureBase       = 0x3AE0,  -- 压力基准
-    Treatment_Head_Skin_Contact     = 0x3AF8,  -- 治疗头贴肤
+    Treatment_Head_Skin_Contact     = 0x3AF8,  -- 头端贴肤
 
     -- ============================================================================
     -- 测试参数
@@ -428,11 +430,11 @@ ERROR_ADDR={
     ErrorFPGAResponseZero      = 0x0063,    -- 内部错误: 请联系售后
 
     -- 阻抗监测错误
-    ErrorImpedanceUnmatched    = 0x0070,    -- 治疗时可能未良好接触: 若多次重试后失败，请联系售后
+    ErrorImpedanceUnmatched    = 0x0070,    -- 头端可能未良好接触: 若多次重试后失败，请联系售后
     ErrorImpedanceVoltageLow   = 0x0071,    -- 内部错误: 请联系售后
-    ErrorImpedanceMatched      = 0x0072,    -- 治疗时可能未良好接触: 若多次重试后失败，请联系售后
+    ErrorImpedanceMatched      = 0x0072,    -- 头端可能未良好接触: 若多次重试后失败，请联系售后
     ErrorImpedanceMatchedVoltageLow = 0x0073,  -- 内部错误: 请联系售后
-    ErrorDCPowerTooHigh        = 0x0074,    -- 治疗时可能未良好接触: 若多次重试后失败，请联系售后
+    ErrorDCPowerTooHigh        = 0x0074,    -- 头端可能未良好接触: 若多次重试后失败，请联系售后
     ErrorCouplerPowerHigh      = 0x0075,    -- 内部错误: 请联系售后
     ErrorCouplerPowerLow       = 0x0076,    -- 内部错误: 请联系售后
     ErrorACCurrentIdle         = 0x0078,    -- 内部错误: 若多次重试后失败，请联系售后
@@ -442,31 +444,31 @@ ERROR_ADDR={
     ErrorCouplerPowerTooHigh2  = 0x007C,    -- 内部错误: 若多次重试后失败，请联系售后
     ErrorCouplerPowerTooLow2   = 0x007D,    -- 内部错误: 若多次重试后失败，请联系售后
 
-    -- 治疗头相关错误
-    ErrorHandpieceError        = 0x0080,    -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceTimeout      = 0x0081,    -- 治疗头超时: 更换有效的治疗头
-    ErrorHandpieceCommError    = 0x0082,    -- 治疗头错误: 重新插拔治疗头
-    ErrorHandpieceInvalid      = 0x0083,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpieceNotInserted  = 0x0084,    -- 治疗头没插好: 请重新插治疗头
-    ErrorHandpieceOverheat     = 0x0085,    -- 治疗头过温: 请等待冷却
+    -- 头端相关错误
+    ErrorHandpieceError        = 0x0080,    -- 头端错误: 更换有效的头端
+    ErrorHandpieceTimeout      = 0x0081,    -- 头端超时: 更换有效的头端
+    ErrorHandpieceCommError    = 0x0082,    -- 头端错误: 重新插拔头端
+    ErrorHandpieceInvalid      = 0x0083,    -- 头端无效: 更换有效的头端
+    ErrorHandpieceNotInserted  = 0x0084,    -- 头端没插好: 请重新插头端
+    ErrorHandpieceOverheat     = 0x0085,    -- 头端过温: 请等待冷却
     ErrorHeadContactAbnormal   = 0x0086,    -- 头端接触异常: 请重新插拔
-    ErrorHandpieceCompleted    = 0x0087,    -- 治疗完成: 请更换新的治疗头
-    ErrorHandpieceTypeError    = 0x0089,    -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceActivated    = 0x008A,    -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceNotActivated = 0x008B,    -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceUnused       = 0x008C,    -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceUsed         = 0x008D,    -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceUndefinedUnused = 0x008E,  -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceUndefinedUsed = 0x008F,   -- 治疗头错误: 更换有效的治疗头
-    ErrorHandpieceVersionFail  = 0x0091,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpieceUIDFail      = 0x0092,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpieceCountFail    = 0x0093,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpiecePage0Fail    = 0x0094,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpiecePage1Fail    = 0x0095,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpieceInvalid7     = 0x009B,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpieceCRCError     = 0x009C,    -- 治疗头无效: 更换有效的治疗头
-    ErrorHandpieceExhausted    = 0x009E,    -- 治疗头次数耗尽: 更换有效的治疗头
-    ErrorHandpieceNewChip      = 0x009F,    -- 治疗头无效: 更换有效的治疗头
+    ErrorHandpieceCompleted    = 0x0087,    -- 操作完成: 请更换新的头端
+    ErrorHandpieceTypeError    = 0x0089,    -- 头端错误: 更换有效的头端
+    ErrorHandpieceActivated    = 0x008A,    -- 头端错误: 更换有效的头端
+    ErrorHandpieceNotActivated = 0x008B,    -- 头端错误: 更换有效的头端
+    ErrorHandpieceUnused       = 0x008C,    -- 头端错误: 更换有效的头端
+    ErrorHandpieceUsed         = 0x008D,    -- 头端错误: 更换有效的头端
+    ErrorHandpieceUndefinedUnused = 0x008E,  -- 头端错误: 更换有效的头端
+    ErrorHandpieceUndefinedUsed = 0x008F,   -- 头端错误: 更换有效的头端
+    ErrorHandpieceVersionFail  = 0x0091,    -- 头端无效: 更换有效的头端
+    ErrorHandpieceUIDFail      = 0x0092,    -- 头端无效: 更换有效的头端
+    ErrorHandpieceCountFail    = 0x0093,    -- 头端无效: 更换有效的头端
+    ErrorHandpiecePage0Fail    = 0x0094,    -- 头端无效: 更换有效的头端
+    ErrorHandpiecePage1Fail    = 0x0095,    -- 头端无效: 更换有效的头端
+    ErrorHandpieceInvalid7     = 0x009B,    -- 头端无效: 更换有效的头端
+    ErrorHandpieceCRCError     = 0x009C,    -- 头端无效: 更换有效的头端
+    ErrorHandpieceExhausted    = 0x009E,    -- 头端次数耗尽: 更换有效的头端
+    ErrorHandpieceNewChip      = 0x009F,    -- 头端无效: 更换有效的头端
 
     -- 射频校准错误
     ErrorCalibrationOpen       = 0x00A1,    -- 内部错误: 请联系售后
@@ -480,6 +482,7 @@ ERROR_ADDR={
 
     -- 手具传感器错误
     ErrorHandpiecePressureSensor = 0x00C0,  -- 内部错误: 请联系售后
+    ErrorMonitorRelaySet             = 0x00C1, -- 新增：监测板继电器设置失败
 
     -- 参数存储错误
     ErrorStorageDevice         = 0x0100,    -- 内部错误: 请联系售后
@@ -489,7 +492,7 @@ ERROR_ADDR={
 
     -- 操作相关错误
     ErrorKeyPressedTooLong     = 0x0108,    -- 发射键按压时间过长: 请松开后重试
-    ErrorHandpieceOverPressure = 0x0109,    -- 治疗头受压过重: 请调节为合适压力
+    ErrorHandpieceOverPressure = 0x0109,    -- 头端受压过重: 请调节为合适压力
     ErrorKeyReleased           = 0x010A,    -- 按键被松开: 请重试
     ErrorHandpieceNotOnSkin    = 0x010B,    -- 手具未贴肤: 请重试
 
@@ -508,19 +511,24 @@ ERROR_ADDR={
     ErrorPythonDisconnect      = 0x0130,    -- 内部错误: 请联系售后
     ErrorPythonBlock           = 0x0131,    -- 内部错误: 请联系售后
 
-    -- 治疗头版本错误
-    ErrorHandpieceUnsupportedVersion = 0x0150,  -- 不支持的治疗头版本: 更换有效的治疗头
+    -- 头端版本错误
+    ErrorHandpieceUnsupportedVersion = 0x0150,  -- 不支持的头端版本: 更换有效的头端
+    ErrorHandpieceUnsupportedType = 0x0151,  -- 不支持的头端版本: 更换有效的头端
+
+    ErrorCurrentRatioAbnormal        = 0x1000, -- 新增：电流比值异常
+    ErrorHandpieceMainboardHandshake = 0x1001, -- 新增：手具与主板握手失败
 
     -- 其他内部错误
     ErrorSolenoidValve         = 0x1010,    -- 内部错误: 请联系售后
     ErrorHandpieceWriteCount   = 0x1050,    -- 内部错误: 请联系售后
     ErrorHandpieceInvalidate   = 0x1051,    -- 内部错误: 请联系售后
     ErrorHandpieceActivate     = 0x1052,    -- 内部错误: 请联系售后
+    ErrorHandpieceWritePage7   = 0x1053,    -- 新增：Page7写入失败
 
     -- 文件传输错误
-    Error_File_MCU_ERROR       = 0x40,      -- 上传文件时下位机错误: 请重试
+    Error_File_MCU_ERROR       = 0x200,      -- 上传文件时下位机错误: 请重试
     Error_File_Screen_ERROR    = 0x201,     -- 上传文件时上位机错误: 请重试
-    Error_File_Send_MCU_ERROR  = 0x41,      -- 下载文件时下位机错误: 请重试
+    Error_File_Send_MCU_ERROR  = 0x202,      -- 下载文件时下位机错误: 请重试
     Error_File_Send_Screen_ERROR = 0x203,   -- 下载文件时上位机错误: 请重试
 }
 ErrorMessages = {
@@ -565,7 +573,7 @@ ErrorMessages = {
     [ERROR_ADDR.ErrorFanMalfunction] = {title = "风扇不转", solution = "请检查风扇是否供电或者被卡住", type = "hardware", level = "error"},
     [ERROR_ADDR.ErrorPressureSensor1] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
     [ERROR_ADDR.ErrorPressureSensor2] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
-    [ERROR_ADDR.ErrorFootPedalDisconnected] = {title = "脚踏未连接", solution = "请连接脚踏", type = "accessory", level = "error"},
+    [ERROR_ADDR.ErrorFootPedalDisconnected] = {title = "内部错误", solution = "请联系售后", type = "accessory", level = "error"},
     [ERROR_ADDR.ErrorVoltageInsufficient] = {title = "电压不足", solution = "请联系技术支持", type = "voltage", level = "error"},
     
     -- ==================== 恒压错误 ====================
@@ -590,11 +598,11 @@ ErrorMessages = {
     [ERROR_ADDR.ErrorFPGAResponseZero] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
     
     -- ==================== 阻抗监测错误 ====================
-    [ERROR_ADDR.ErrorImpedanceUnmatched] = {title = "治疗时可能未良好接触", solution = "若多次重试后失败，请联系售后", type = "treatment", level = "warning"},
+    [ERROR_ADDR.ErrorImpedanceUnmatched] = {title = "头端可能未良好接触", solution = "若多次重试后失败，请联系售后", type = "treatment", level = "warning"},
     [ERROR_ADDR.ErrorImpedanceVoltageLow] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
-    [ERROR_ADDR.ErrorImpedanceMatched] = {title = "治疗时可能未良好接触", solution = "若多次重试后失败，请联系售后", type = "treatment", level = "warning"},
+    [ERROR_ADDR.ErrorImpedanceMatched] = {title = "头端可能未良好接触", solution = "若多次重试后失败，请联系售后", type = "treatment", level = "warning"},
     [ERROR_ADDR.ErrorImpedanceMatchedVoltageLow] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
-    [ERROR_ADDR.ErrorDCPowerTooHigh] = {title = "治疗时可能未良好接触", solution = "若多次重试后失败，请联系售后", type = "treatment", level = "warning"},
+    [ERROR_ADDR.ErrorDCPowerTooHigh] = {title = "头端可能未良好接触", solution = "若多次重试后失败，请联系售后", type = "treatment", level = "warning"},
     [ERROR_ADDR.ErrorCouplerPowerHigh] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
     [ERROR_ADDR.ErrorCouplerPowerLow] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
     [ERROR_ADDR.ErrorACCurrentIdle] = {title = "内部错误", solution = "若多次重试后失败，请联系售后", type = "internal", level = "error"},
@@ -604,31 +612,31 @@ ErrorMessages = {
     [ERROR_ADDR.ErrorCouplerPowerTooHigh2] = {title = "内部错误", solution = "若多次重试后失败，请联系售后", type = "internal", level = "error"},
     [ERROR_ADDR.ErrorCouplerPowerTooLow2] = {title = "内部错误", solution = "若多次重试后失败，请联系售后", type = "internal", level = "error"},
     
-    -- ==================== 治疗头相关错误 ====================
-    [ERROR_ADDR.ErrorHandpieceError] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceTimeout] = {title = "治疗头超时", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceCommError] = {title = "治疗头错误", solution = "重新插拔治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceInvalid] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceNotInserted] = {title = "治疗头没插好", solution = "请重新插治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceOverheat] = {title = "治疗头过温", solution = "请等待冷却", type = "handpiece", level = "error"},
+    -- ==================== 头端相关错误 ====================
+    [ERROR_ADDR.ErrorHandpieceError] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceTimeout] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceCommError] = {title = "头端错误", solution = "重新插拔头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceInvalid] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceNotInserted] = {title = "头端没插好", solution = "请重新插头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceOverheat] = {title = "头端过温", solution = "若多次重试后失败，请联系售后", type = "handpiece", level = "error"},
     [ERROR_ADDR.ErrorHeadContactAbnormal] = {title = "头端接触异常", solution = "请重新插拔", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceCompleted] = {title = "治疗完成", solution = "请更换新的治疗头", type = "handpiece", level = "info"},
-    [ERROR_ADDR.ErrorHandpieceTypeError] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceActivated] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceNotActivated] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceUnused] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceUsed] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceUndefinedUnused] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceUndefinedUsed] = {title = "治疗头错误", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceVersionFail] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceUIDFail] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceCountFail] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpiecePage0Fail] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpiecePage1Fail] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceInvalid7] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceCRCError] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceExhausted] = {title = "治疗头次数耗尽", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
-    [ERROR_ADDR.ErrorHandpieceNewChip] = {title = "治疗头无效", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceCompleted] = {title = "操作完成", solution = "请更换新的头端", type = "handpiece", level = "info"},
+    [ERROR_ADDR.ErrorHandpieceTypeError] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceActivated] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceNotActivated] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceUnused] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceUsed] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceUndefinedUnused] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceUndefinedUsed] = {title = "头端错误", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceVersionFail] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceUIDFail] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceCountFail] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpiecePage0Fail] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpiecePage1Fail] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceInvalid7] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceCRCError] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceExhausted] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceNewChip] = {title = "头端无效", solution = "更换有效的头端", type = "handpiece", level = "error"},
     
     -- ==================== 射频校准错误 ====================
     [ERROR_ADDR.ErrorCalibrationOpen] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
@@ -651,7 +659,7 @@ ErrorMessages = {
     
     -- ==================== 操作相关错误 ====================
     [ERROR_ADDR.ErrorKeyPressedTooLong] = {title = "发射键按压时间过长", solution = "请松开后重试", type = "operation", level = "warning"},
-    [ERROR_ADDR.ErrorHandpieceOverPressure] = {title = "治疗头受压过重", solution = "请调节为合适压力", type = "operation", level = "warning"},
+    [ERROR_ADDR.ErrorHandpieceOverPressure] = {title = "头端受压过重", solution = "请调节为合适压力", type = "operation", level = "warning"},
     [ERROR_ADDR.ErrorKeyReleased] = {title = "按键被松开", solution = "请重试", type = "operation", level = "warning"},
     [ERROR_ADDR.ErrorHandpieceNotOnSkin] = {title = "手具未贴肤", solution = "请重试", type = "operation", level = "warning"},
     
@@ -670,8 +678,9 @@ ErrorMessages = {
     [ERROR_ADDR.ErrorPythonDisconnect] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
     [ERROR_ADDR.ErrorPythonBlock] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
     
-    -- ==================== 治疗头版本错误 ====================
-    [ERROR_ADDR.ErrorHandpieceUnsupportedVersion] = {title = "不支持的治疗头版本", solution = "更换有效的治疗头", type = "handpiece", level = "error"},
+    -- ==================== 头端版本错误 ====================
+    [ERROR_ADDR.ErrorHandpieceUnsupportedVersion] = {title = "不支持的头端版本", solution = "更换有效的头端", type = "handpiece", level = "error"},
+    [ERROR_ADDR.ErrorHandpieceUnsupportedType] = {title = "不支持的头端版本", solution = "更换有效的头端", type = "handpiece", level = "error"},
     
     -- ==================== 其他内部错误 ====================
     [ERROR_ADDR.ErrorSolenoidValve] = {title = "内部错误", solution = "请联系售后", type = "internal", level = "error"},
@@ -684,6 +693,10 @@ ErrorMessages = {
     [ERROR_ADDR.Error_File_Screen_ERROR] = {title = "上传文件时上位机错误", solution = "请重试", type = "file", level = "error"},
     [ERROR_ADDR.Error_File_Send_MCU_ERROR] = {title = "下载文件时下位机错误", solution = "请重试", type = "file", level = "error"},
     [ERROR_ADDR.Error_File_Send_Screen_ERROR] = {title = "下载文件时上位机错误", solution = "请重试", type = "file", level = "error"},
+    [ERROR_ADDR.ErrorMonitorRelaySet] = {title = "内部错误",solution = "请联系售后",type = "internal",level = "error"},
+    [ERROR_ADDR.ErrorCurrentRatioAbnormal] = {title = "电流比值错误",solution = "请联系售后",type = "internal",level = "error"},
+    [ERROR_ADDR.ErrorHandpieceMainboardHandshake] = {title = "手具未连接",solution = "请连接手具",type = "handpiece",level = "error"},
+    [ERROR_ADDR.ErrorHandpieceWritePage7] = {title = "内部错误",solution = "请联系售后",type = "internal",level = "error"},
 }
 Treat_mode={
     Classic_Mode=0,
@@ -747,8 +760,8 @@ Current_info = { -- 当前信息
 
 }
 SCREENID = {
-    Treatment_Not_Recognized_SCREEN = 1, -- 治疗头未识别界面
-    Treatment_Process_SCREEN = 3, -- 治疗头进行中
+    Treatment_Not_Recognized_SCREEN = 1, -- 头端未识别界面
+    Treatment_Process_SCREEN = 3, -- 头端进行中
     Setting_SCREEN = 5, -- 设置界面
     Engineer_Password_SCREEN = 7, -- 工程师密码界面
     Engineer_Select_SCREEN = 9, -- 工程师功能选择界面
@@ -785,8 +798,8 @@ Treatment_Not_Recognized_SCREEN_CONTROL = {
     Model = 13, -- 型号
     Pulse_Count = 14, -- 发数
     Date = 15,
-    Treatment_Progress_Icon = 16, -- 治疗进程
-    Treatment_Complete_Icon = 17, -- 治疗头图标
+    Treatment_Progress_Icon = 16, -- 操作进程
+    Treatment_Complete_Icon = 17, -- 头端图标
     Warning_Code = 18, -- 警告码
     Warning_Details = 19, -- 警告详细信息
     Password_Input_Box = 24, -- 密码输入框
@@ -806,8 +819,8 @@ Treatment_Process_SCREEN_CONTROL = {
     Gear_Text = 11, -- 档位文本
     Refrigeration_Icon = 14, -- 制冷图标
     Vibration_Icon = 15, -- 震动图标
-    Treatment_Progress_Icon = 16, -- 治疗进程
-    Treatment_Complete_Icon = 17, -- 治疗头图标
+    Treatment_Progress_Icon = 16, -- 操作进程
+    Treatment_Complete_Icon = 17, -- 头端图标
     Warning_Code = 18, -- 警告码
     Warning_Details = 19, -- 警告详细信息
     Totalused_Headcount=20  --已用发数/总发数
@@ -824,8 +837,8 @@ V2Treatment_Process_SCREEN_CONTROL = {
     Gear_Text = 11, -- 档位文本
     Refrigeration_Icon = 14, -- 制冷图标
     Vibration_Icon = 15, -- 震动图标
-    Treatment_Progress_Icon = 16, -- 治疗进程
-    Treatment_Complete_Icon = 17, -- 治疗头图标
+    Treatment_Progress_Icon = 16, -- 操作进程
+    Treatment_Complete_Icon = 17, -- 头端图标
     Warning_Code = 18, -- 警告码
     Warning_Details = 19, -- 警告详细信息
     Totalused_Headcount=20  --已用发数/总发数
@@ -841,8 +854,8 @@ BODYTreatment_Process_SCREEN_CONTROL = {
     Gear_Text = 11, -- 档位文本
     Refrigeration_Icon = 14, -- 制冷图标
     Vibration_Icon = 15, -- 震动图标
-    Treatment_Progress_Icon = 16, -- 治疗进程
-    Treatment_Complete_Icon = 17, -- 治疗头图标
+    Treatment_Progress_Icon = 16, -- 操作进程
+    Treatment_Complete_Icon = 17, -- 头端图标
     Warning_Code = 18, -- 警告码
     Warning_Details = 19, -- 警告详细信息
     Totalused_Headcount=20  --已用发数/总发数
@@ -1019,7 +1032,7 @@ IMPEDANCE_MATCHING_SCREEN_CONTROL = {
     Impedance_Head = 34,                 -- 阻抗头部
     Match_Save_Button = 50,                     -- 匹配保存
     Spray_Coolant_Button = 51,                  -- 喷射冷媒
-    Start_Treatment_Button = 52,                 -- 开始治疗
+    Start_Treatment_Button = 52,                 -- 开始操作
 
     Automatic_Refrigerant_Control = 60,          -- 冷媒自动控制
 
@@ -1060,10 +1073,10 @@ STATUS_VIEW_SCREEN_CONTROL = {
     HandpiecePressure = 12,             -- 手具压力 (°C)
     MagneticForce = 13,                 -- 磁力 (°Cs)
 
-    -- 治疗头参数区域
-    Treatment_Head_Type = 14,            -- 治疗头类型
-    HeadVersion = 15,         -- 治疗头版本
-    HeadId = 16,              -- 治疗头 ID
+    -- 头端参数区域
+    Treatment_Head_Type = 14,            -- 头端类型
+    HeadVersion = 15,         -- 头端版本
+    HeadId = 16,              -- 头端 ID
     TotalCycles = 17,                    -- 总次数
     RemainingCycycles = 19,                -- 剩余次数
     ProduceDate = 20,                -- 生产日期
@@ -1083,7 +1096,7 @@ STATUS_VIEW_SCREEN_CONTROL = {
 
     Log_Export=35,    -- 日志导出区域
     Match_Info_Export = 36 ,              -- 匹配信息导出
-    Treatment_Head_Skin_Contact = 38 ,--治疗头贴肤
+    Treatment_Head_Skin_Contact = 38 ,--头端贴肤
     --错误码
     Error_Code = 39,                     -- 错误码
 }

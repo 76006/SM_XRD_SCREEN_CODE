@@ -38,6 +38,7 @@ function on_init() -- 开机回调函数
     end
     -- myfile_write("B:/test.txt",testdata)
     -- myfile_write_add("B:/test.txt",testdata)
+    start_timer(Timer_ID.screen_change_flag,Timer_Info[Timer_ID.screen_change_flag].timeout,Timer_Info[Timer_ID.screen_change_flag].countdown,1)
 end
 
 function screen_init()
@@ -60,20 +61,7 @@ function on_timer(timer_id)
         -- -- 停止定时器（如果需要）
         -- stop_timer(Timer_ID.MCU_Ack)
     elseif timer_id == Timer_ID.Uart_send then
-        -- print("MCU_Ack")
-        -- print("ACK received for message")
-        -- if sending_in_progress then
-        --     -- 方案A：直接拒绝新消息（最简单）
-        --     retry=1+retry
-        --     print("正在发送中，拒绝新消息：")
-        -- else
-        --     local next_msg = table.remove(pending_messages, 1)
-        --     retry=0
-        --     if next_msg ~= nil then
-        --         uart_send_data(next_msg)
-        --     end
-            
-        -- end
+ 
     elseif timer_id == Timer_ID.Test_State then
 
         local success_icon = 2
@@ -121,6 +109,9 @@ function on_timer(timer_id)
     elseif timer_id == Timer_ID.Verify_Gear_RF_Timer then
         
         screen_write_to_MCU(VAR_ADDR.RF_start_select,0x01,1);
+    elseif timer_id == Timer_ID.screen_change_flag then
+        change_screen(SCREENID.Treatment_Not_Recognized_SCREEN)
+        stop_timer(Timer_ID.screen_change_flag)
 
     end
 end

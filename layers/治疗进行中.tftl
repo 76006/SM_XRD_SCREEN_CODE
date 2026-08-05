@@ -723,7 +723,7 @@
       <Property name="MinValue_">0</Property>
       <Property name="Precision_">0</Property>
       <Property name="InitVisible">Show</Property>
-      <Property name="DisplayedText">0</Property>
+      <Property name="DisplayedText">0.0</Property>
       <Property name="_FontSize">42</Property>
       <Property name="TextFont">ASC_CHS_22</Property>
       <Property name="Bold">No</Property>
@@ -760,7 +760,7 @@
       <Property name="TransformX">100</Property>
       <Property name="TransformY">100</Property>
       <Property name="LiveSetting">False</Property>
-      <Property name="Text">0</Property>
+      <Property name="Text">0.0</Property>
       <Property name="Font">微软雅黑, 42px</Property>
       <Property name="BackColor">Transparent</Property>
       <Property name="ForeColor">White</Property>
@@ -931,7 +931,7 @@
       <Property name="MultipleLanguage">No</Property>
       <Property name="ItemName">Icon_12</Property>
       <Property name="ID">16</Property>
-      <Property name="X">67</Property>
+      <Property name="X">81</Property>
       <Property name="Y">121</Property>
       <Property name="BorderWidth">419</Property>
       <Property name="BorderHeight">410</Property>
@@ -979,10 +979,10 @@
       <Property name="MultipleLanguage">No</Property>
       <Property name="ItemName">Icon_11</Property>
       <Property name="ID">17</Property>
-      <Property name="X">174</Property>
-      <Property name="Y">222</Property>
-      <Property name="BorderWidth">214</Property>
-      <Property name="BorderHeight">206</Property>
+      <Property name="X">179</Property>
+      <Property name="Y">216</Property>
+      <Property name="BorderWidth">220</Property>
+      <Property name="BorderHeight">220</Property>
       <Property name="PortSelectorEnable">False</Property>
       <Property name="Ports">
       </Property>
@@ -1002,7 +1002,7 @@
       <Property name="Draggable">False</Property>
       <Property name="Stretch">True</Property>
       <Property name="BoldSize">1</Property>
-      <Property name="Size">214, 206</Property>
+      <Property name="Size">220, 220</Property>
       <Property name="TextAlign">MiddleCenter</Property>
       <Property name="TabIndex">52</Property>
       <Property name="BackgroundImageLayout">Stretch</Property>
@@ -1186,7 +1186,7 @@
     <Property name="BorderWidth">1280</Property>
     <Property name="BorderHeight">800</Property>
     <Property name="BgColor">Gainsboro</Property>
-    <Property name="BgImagePath">26-治疗中-去掉制冷剂.jpg</Property>
+    <Property name="BgImagePath">4.jpg</Property>
     <Property name="AutoScaleMode">Inherit</Property>
     <Property name="Name">治疗进行中</Property>
     <Property name="DoubleBuffered">False</Property>

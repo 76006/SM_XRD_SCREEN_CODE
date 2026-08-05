@@ -8,7 +8,7 @@
     <Property name="BorderWidth">1280</Property>
     <Property name="BorderHeight">800</Property>
     <Property name="BgColor">Gainsboro</Property>
-    <Property name="BgImagePath">5-治疗中高亮-去掉制冷剂.jpg</Property>
+    <Property name="BgImagePath" />
     <Property name="AutoScaleMode">Inherit</Property>
     <Property name="Name">治疗进行中按下</Property>
     <Property name="DoubleBuffered">False</Property>

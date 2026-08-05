@@ -102,16 +102,16 @@
       <Property name="Bold_">No</Property>
       <Property name="NormalTextColor_">Black</Property>
       <Property name="PressedTextColor_">Black</Property>
-      <Property name="NormalText_">
-      </Property>
-      <Property name="PressedText_">
-      </Property>
+      <Property name="NormalText_" />
+      <Property name="PressedText_" />
       <Property name="TextAlignType">MiddleCenter</Property>
       <Property name="WordWrap">Yes</Property>
       <Property name="NormalBackgroundColor">Transparent</Property>
       <Property name="PressedBackgroundColor">Transparent</Property>
-      <Property name="NormalImage" />
-      <Property name="PressedImage" />
+      <Property name="NormalImage">
+      </Property>
+      <Property name="PressedImage">
+      </Property>
       <Property name="ShowBorder">No</Property>
       <Property name="BorderColor_">Yellow</Property>
       <Property name="EventNotify">Yes</Property>
